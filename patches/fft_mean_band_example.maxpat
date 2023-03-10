@@ -40,6 +40,28 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 198.0, 629.0, 28.0, 20.0 ],
+					"text" : "dim"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 109.0, 629.0, 28.0, 20.0 ],
+					"text" : "pos"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"id" : "obj-15",
 					"maxclass" : "comment",
@@ -58,9 +80,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 208.0, 680.5, 333.0, 37.0 ],
-					"presentation_linecount" : 4,
-					"text" : "takes two arguments setting size and position of the band on x and y axis (0 to128). Default are @dim43 @pos 86"
+					"patching_rect" : [ 208.0, 680.5, 334.0, 37.0 ],
+					"text" : "takes two arguments setting size and position of the band on x and y axis (0 to128). Default are @pos 43 @dim 10"
 				}
 
 			}
@@ -78,7 +99,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"color" : [ 0.501960784313725, 0.031372549019608, 0.031372549019608, 1.0 ],
 					"id" : "obj-17",
 					"maxclass" : "newobj",
@@ -86,7 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 9.0, 688.0, 197.0, 22.0 ],
-					"text" : "fft_mean_bands @dim 43 @pos 86"
+					"text" : "fft_mean_bands @pos 43 @dim 10"
 				}
 
 			}
@@ -98,7 +118,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 187.0, 647.5, 50.0, 22.0 ]
+					"patching_rect" : [ 187.0, 654.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -110,7 +130,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 98.0, 647.5, 50.0, 22.0 ]
+					"patching_rect" : [ 98.0, 654.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -481,7 +501,7 @@
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/Documents/GitHub/BoB/src",
+				"bootpath" : "~/Documents/GitHub/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
