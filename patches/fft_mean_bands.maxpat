@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1420.0, 149.0, 1226.0, 822.0 ],
+		"rect" : [ 670.0, 459.0, 1226.0, 822.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,21 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "jit.fpsgui",
+					"mode" : 4,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 290.0, 234.0, 80.0, 35.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "comment",
@@ -303,7 +318,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.5, 543.0, 71.0, 22.0 ],
+					"patching_rect" : [ 72.5, 543.0, 71.0, 22.0 ],
 					"text" : "pak dim 0 0"
 				}
 
@@ -351,7 +366,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 389.5, 635.0, 69.0, 22.0 ],
+					"patching_rect" : [ 459.5, 635.0, 69.0, 22.0 ],
 					"text" : "jit.unpack 2"
 				}
 
@@ -375,7 +390,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 55.5, 635.0, 69.0, 22.0 ],
+					"patching_rect" : [ 135.5, 635.0, 69.0, 22.0 ],
 					"text" : "jit.unpack 2"
 				}
 
@@ -802,13 +817,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
 					"source" : [ "obj-54", 0 ]
 				}
 
@@ -816,13 +824,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
-					"source" : [ "obj-58", 0 ]
+					"order" : 1,
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-59", 0 ]
 				}
 
