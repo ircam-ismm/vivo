@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 87.0, 87.0, 1126.0, 901.0 ],
+		"rect" : [ -20.0, -993.0, 1126.0, 901.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -71,7 +71,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 755.0, 37.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "down"
 				}
 
@@ -94,7 +93,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 552.0, 759.0, 32.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "right"
 				}
 
@@ -426,24 +424,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-54",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 283.0, 147.0, 169.0, 20.0 ],
-					"style" : "default",
-					"text" : "Only works on greyscale data"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-13",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 541.0, 314.0, 135.0, 47.0 ],
+					"patching_rect" : [ 335.0, 86.0, 135.0, 47.0 ],
 					"style" : "default",
 					"text" : "2-plane float32 matrix.\nPlane 0: Horizontal flow\nPlane 1: Vertical flow"
 				}
@@ -455,7 +441,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 283.0, 141.0, 20.0 ],
+					"patching_rect" : [ 333.0, 55.0, 141.0, 20.0 ],
 					"style" : "default",
 					"text" : "Single-plane char matrix."
 				}
@@ -467,7 +453,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 493.0, 327.0, 48.0, 20.0 ],
+					"patching_rect" : [ 287.0, 99.0, 48.0, 20.0 ],
 					"style" : "default",
 					"text" : "Output:"
 				}
@@ -479,7 +465,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 493.0, 282.0, 39.0, 20.0 ],
+					"patching_rect" : [ 287.0, 54.0, 39.0, 20.0 ],
 					"style" : "default",
 					"text" : "Input:"
 				}
@@ -496,7 +482,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 311.0, 51.0, 52.0 ],
+					"patching_rect" : [ 283.0, 83.0, 51.0, 52.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -513,7 +499,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 275.0, 51.0, 37.0 ],
+					"patching_rect" : [ 283.0, 47.0, 51.0, 37.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -530,7 +516,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 275.0, 218.0, 36.0 ],
+					"patching_rect" : [ 283.0, 47.0, 218.0, 36.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -547,7 +533,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 489.0, 310.0, 218.0, 53.0 ],
+					"patching_rect" : [ 283.0, 82.0, 218.0, 53.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -562,7 +548,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 76.0, 355.0, 108.0, 22.0 ],
+					"patching_rect" : [ 76.0, 278.0, 108.0, 22.0 ],
 					"text_width" : 60.0
 				}
 
@@ -586,32 +572,6 @@
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 36.0, 48.0, 245.0, 218.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-22",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 283.0, 170.0, 145.0, 33.0 ],
-					"style" : "default",
-					"text" : "Smaller matrices yield much better results."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 283.0, 209.0, 175.0, 47.0 ],
-					"style" : "default",
-					"text" : "Use @unique 1... \nSending the same matrix twice will result in zero optical flow."
 				}
 
 			}
@@ -675,19 +635,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-29",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 76.0, 300.0, 215.0, 47.0 ],
-					"style" : "default",
-					"text" : "Between 1 and 7. Higher values give better results but slower computation and image appears slightly blurred."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-38",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -741,9 +688,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 36.0, 409.0, 65.0, 22.0 ],
+					"patching_rect" : [ 36.0, 311.0, 69.0, 22.0 ],
 					"style" : "default",
-					"text" : "cv.jit.lkflow"
+					"text" : "cv.jit.hsflow"
 				}
 
 			}
@@ -765,7 +712,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1309.0, 533.0, 593.0, 428.0 ],
+						"rect" : [ 960.0, 369.0, 593.0, 428.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -793,7 +740,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -1373,7 +1319,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 36.0, 440.0, 78.0, 22.0 ],
+					"patching_rect" : [ 36.0, 335.0, 78.0, 22.0 ],
 					"style" : "default",
 					"text" : "jit.unpack 2"
 				}
@@ -1400,36 +1346,6 @@
 					"patching_rect" : [ 93.0, 508.0, 134.0, 20.0 ],
 					"style" : "default",
 					"text" : "Horizontal movement"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 410.0, 58.0, 364.0, 74.0 ],
-					"style" : "default",
-					"text" : "cv.jit.LKflow computes the optical flow of an incoming greyscale matrix using the Lucas-Kanade technique.\r\rQuality can be controled via the \"radius\" attribute, although large values will result in a heavier CPU load."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.823529, 0.823529, 0.764706, 1.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.54902, 0.54902, 0.54902, 1.0 ],
-					"id" : "obj-52",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 404.0, 52.0, 375.0, 86.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0
 				}
 
 			}
@@ -1741,7 +1657,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.LKflow.mxo",
+				"name" : "cv.jit.HSflow.mxo",
 				"type" : "iLaX"
 			}
 , 			{
