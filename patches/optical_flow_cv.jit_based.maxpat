@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, -993.0, 1352.0, 935.0 ],
+		"rect" : [ 68.0, -993.0, 1352.0, 935.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -65,19 +65,6 @@
 			}
 , 			{
 				"box" : 				{
-					"attr" : "nodenumber",
-					"id" : "obj-105",
-					"maxclass" : "attrui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 712.0, 666.0, 150.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-98",
 					"maxclass" : "newobj",
 					"numinlets" : 6,
@@ -107,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 407.25, 670.0, 97.75, 22.0 ],
+					"patching_rect" : [ 407.25, 670.0, 124.0, 22.0 ],
 					"text" : "pack f f"
 				}
 
@@ -163,8 +150,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1046.0, 703.0, 50.0, 22.0 ],
-					"text" : "left"
+					"patching_rect" : [ 1015.0, 703.0, 50.0, 22.0 ],
+					"text" : "right"
 				}
 
 			}
@@ -367,8 +354,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 929.5, 431.0, 84.0, 20.0 ],
-					"text" : "global energy "
+					"patching_rect" : [ 929.5, 431.0, 97.0, 20.0 ],
+					"text" : "absolute energy "
 				}
 
 			}
@@ -406,28 +393,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1055.5, 298.0, 143.0, 22.0 ],
 					"text" : "expr $f1 + $f2 + $f3 + $f4"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1046.0, 57.0, 58.0, 20.0 ],
-					"text" : "threshold"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 751.0, 59.0, 58.0, 20.0 ],
-					"text" : "threshold"
 				}
 
 			}
@@ -1020,7 +985,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 133.0, 354.0, 355.0, 47.0 ],
+					"patching_rect" : [ 36.0, 645.0, 355.0, 47.0 ],
 					"style" : "default",
 					"text" : "The values of the output matrix are estimations of that pixel's displacement compared to the previous frame. Negative values indicate leftward and upward movements."
 				}
@@ -1725,7 +1690,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 289.0, 428.0, 120.0, 20.0 ],
+					"patching_rect" : [ 260.0, 424.0, 120.0, 20.0 ],
 					"style" : "default",
 					"text" : "Vertical movement"
 				}
@@ -1737,7 +1702,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 93.0, 428.0, 134.0, 20.0 ],
+					"patching_rect" : [ 62.0, 424.0, 134.0, 20.0 ],
 					"style" : "default",
 					"text" : "Horizontal movement"
 				}
@@ -1819,13 +1784,6 @@
 					"destination" : [ "obj-119", 0 ],
 					"order" : 1,
 					"source" : [ "obj-100", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-90", 0 ],
-					"source" : [ "obj-105", 0 ]
 				}
 
 			}
@@ -2050,6 +2008,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
+					"midpoints" : [ 45.5, 381.0, 405.0, 381.0, 405.0, 570.0, 406.25, 570.0 ],
 					"order" : 1,
 					"source" : [ "obj-46", 0 ]
 				}
@@ -2058,6 +2017,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
+					"midpoints" : [ 75.0, 381.0, 485.0, 381.0 ],
 					"order" : 1,
 					"source" : [ "obj-46", 1 ]
 				}
@@ -2257,6 +2217,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 0 ],
+					"midpoints" : [ 416.75, 888.0, 606.0, 888.0, 606.0, 759.0, 628.5, 759.0 ],
 					"source" : [ "obj-90", 0 ]
 				}
 
