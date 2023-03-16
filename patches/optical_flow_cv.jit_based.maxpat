@@ -40,6 +40,75 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 803.0, 735.0, 42.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "rear R"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 761.0, 735.0, 40.0, 20.0 ],
+					"text" : "rear L"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 714.0, 735.0, 45.0, 20.0 ],
+					"text" : "front R"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 663.0, 735.0, 43.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "front L"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 619.0, 735.0, 42.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "center"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "lcd",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "list", "list", "int", "" ],
+					"patching_rect" : [ 978.0, 804.0, 128.0, 128.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-113",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -101,9 +170,13 @@
 			}
 , 			{
 				"box" : 				{
+					"candycane2" : [ 0.741176470588235, 0.156862745098039, 0.156862745098039, 0.88 ],
+					"candycane3" : [ 0.294117647058824, 0.415686274509804, 0.717647058823529, 0.88 ],
 					"displayknob" : 1,
+					"fontsize" : 12.0,
 					"id" : "obj-90",
 					"maxclass" : "nodes",
+					"nodecolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.67 ],
 					"nodenumber" : 5,
 					"nodesnames" : [ "center", "fl", "fr", "rl", "rr" ],
 					"nsize" : [ 0.2, 0.5, 0.5, 0.5, 0.5 ],
