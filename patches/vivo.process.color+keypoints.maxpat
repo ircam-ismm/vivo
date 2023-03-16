@@ -65,16 +65,16 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-43",
-					"linecount" : 8,
+					"linecount" : 12,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 383.166667759418431, 249.333340764045715, 110.0, 98.0 ],
+					"patching_rect" : [ 136.766664087772313, 70.900024000000002, 110.0, 143.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1.0, 28.000001907348633, 310.0, 42.0 ],
-					"text" : "HueAvg 255. HueVar 0. SaturationAvg 255. SaturationVar 0. LuminanceAvg 127. LuminanceVar 0. Color 255 Complexity 1 XAvg 0. XVar 0. YAvg 1. YVar 0."
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 1.0, 28.000001907348633, 310.0, 53.0 ],
+					"text" : "HueAvg 0. HueVar 0. SaturationAvg 0. SaturationVar 0. LuminanceAvg 42.264271 LuminanceVar 3.044759 Color 18 Complexity 18 XAvg 0.47934 XVar 0.501779 YAvg 0.559722 YVar 0.492036"
 				}
 
 			}
@@ -218,7 +218,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -1173,12 +1172,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-4",
+													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 389.0, 128.499994920173663, 50.0, 35.0 ],
-													"text" : "1 1"
+													"text" : "320 240"
 												}
 
 											}
@@ -2029,7 +2029,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 103.0, 26.0, 281.0, 20.0 ],
+									"patching_rect" : [ 153.0, 26.0, 281.0, 20.0 ],
 									"text" : "re-convert to argb (bogus alpha), jit.rgb2hsl is fussy"
 								}
 
@@ -2041,7 +2041,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 50.0, 48.0, 258.0, 22.0 ],
+									"patching_rect" : [ 164.5, 48.0, 258.0, 22.0 ],
 									"text" : "jit.matrix 4 char @planemap 0 0 1 2"
 								}
 
@@ -2113,7 +2113,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
+									"destination" : [ "obj-14", 0 ],
 									"source" : [ "obj-137", 0 ]
 								}
 
@@ -2168,13 +2168,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-14", 0 ],
-									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
 									"source" : [ "obj-26", 0 ]
 								}
 
