@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 215.0, -899.0, 1470.0, 693.0 ],
+		"rect" : [ 215.0, 79.0, 1470.0, 693.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -106,7 +106,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 433.333333333333314, 151.700025323223116, 883.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : "WarmnessAvg SharpnessAvg DetailAvg OpticalFlow HueAvg HueVar SaturationAvg SaturationVar LuminanceAvg LuminanceVar Color Complexity XAvg XVar YAvg YVar",
 					"varname" : "mubu-chop[1]"
 				}
@@ -142,7 +141,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 856.0, -680.0, 885.0, 660.0 ],
+						"rect" : [ 856.0, 79.0, 1293.0, 665.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -170,7 +169,22 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 13.0,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
+									"patching_rect" : [ 362.0, 105.0, 129.0, 23.0 ],
+									"text" : "jit.unpack"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-2",
 									"maxclass" : "comment",
@@ -1314,7 +1328,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-33", 0 ],
-													"order" : 0,
+													"order" : 1,
 													"source" : [ "obj-25", 0 ]
 												}
 
@@ -1322,7 +1336,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-50", 0 ],
-													"order" : 1,
+													"order" : 0,
 													"source" : [ "obj-25", 0 ]
 												}
 
@@ -1483,7 +1497,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 267.0, 88.0, 609.0, 506.0 ],
+										"rect" : [ 1225.0, 720.0, 822.0, 540.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1536,11 +1550,11 @@
 													"ftm_scope" : 1,
 													"id" : "obj-55",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 63.070314347743988, 329.600007951259613, 96.6796875, 18.0 ],
-													"text" : "_(($1 colref) maxi)"
+													"text" : [ "_(($1 colref) maxi)" ]
 												}
 
 											}
@@ -1557,11 +1571,11 @@
 													"ftm_scope" : 0,
 													"id" : "obj-48",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 64.750001847743988, 226.0, 58.705078125, 18.0 ],
-													"text" : "_$hueluma"
+													"text" : [ "_$hueluma" ]
 												}
 
 											}
@@ -1578,10 +1592,11 @@
 													"ftm_scope" : 0,
 													"id" : "obj-47",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 1,
-													"numoutlets" : 0,
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 160.210352182388306, 167.0, 338.115234375, 18.0 ],
-													"text" : "_($lumacol set (new fvec $1 unwrap 0 0 (($1 rows) * ($1 cols))))"
+													"text" : [ "_($lumacol set (new fvec $1 unwrap 0 0 (($1 rows) * ($1 cols))))" ]
 												}
 
 											}
@@ -1598,15 +1613,17 @@
 													"ftm_scope" : 0,
 													"id" : "obj-40",
 													"maxclass" : "ftm.mess",
-													"numinlets" : 1,
-													"numoutlets" : 0,
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 118.6103515625, 200.400000154972076, 332.126953125, 18.0 ],
-													"text" : "_($huecol set (new fvec $1 unwrap 0 0 (($1 rows) * ($1 cols))))"
+													"text" : [ "_($huecol set (new fvec $1 unwrap 0 0 (($1 rows) * ($1 cols))))" ]
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"description" : "              ",
 													"editor_interface" : "",
 													"fontface" : 0,
 													"fontname" : "Arial",
@@ -1617,16 +1634,17 @@
 													"maxclass" : "ftm.object",
 													"name" : "lumacol",
 													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 260.0, 146.0, 172.666015625, 19.0 ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 342.0, 135.799999594688416, 292.14453125, 19.0 ],
 													"persistence" : 0,
-													"scope" : 0,
-													"text" : "fvec $hueluma col 1"
+													"scope" : 0
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"description" : "              ",
 													"editor_interface" : "",
 													"fontface" : 0,
 													"fontname" : "Arial",
@@ -1637,16 +1655,17 @@
 													"maxclass" : "ftm.object",
 													"name" : "huecol",
 													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 260.0, 111.0, 166.666015625, 19.0 ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 342.0, 100.799999594688416, 286.15625, 19.0 ],
 													"persistence" : 0,
-													"scope" : 0,
-													"text" : "fvec $hueluma col 0"
+													"scope" : 0
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"description" : "              ",
 													"editor_interface" : "matrix",
 													"fontface" : 0,
 													"fontname" : "Arial",
@@ -1657,11 +1676,11 @@
 													"maxclass" : "ftm.object",
 													"name" : "hueluma",
 													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 260.0, 72.0, 154.666015625, 19.0 ],
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 342.0, 61.799999594688416, 296.826171875, 19.0 ],
 													"persistence" : 0,
-													"scope" : 0,
-													"text" : "fmat 2073600 2"
+													"scope" : 0
 												}
 
 											}
@@ -1704,10 +1723,15 @@
 													"fontsize" : 13.0,
 													"id" : "obj-32",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 154.750001847743988, 122.0, 84.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 0
+													}
+,
 													"text" : "ftm.jitter fmat"
 												}
 
@@ -1745,9 +1769,14 @@
 													"id" : "obj-10",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"numoutlets" : 3,
+													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 64.750001847743988, 277.800000131130219, 281.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 0
+													}
+,
 													"text" : "mnm.hist 256 @weighted 1 @min 0 @max 255"
 												}
 
@@ -1758,10 +1787,15 @@
 													"fontsize" : 13.0,
 													"id" : "obj-8",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 64.750001847743988, 122.0, 84.0, 23.0 ],
+													"saved_object_attributes" : 													{
+														"ftm_objref_conv" : 0,
+														"ftm_scope" : 2
+													}
+,
 													"text" : "ftm.jitter fmat"
 												}
 
@@ -1949,7 +1983,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 585.0, 114.0, 64.0, 23.0 ],
+									"patching_rect" : [ 585.0, 81.0, 64.0, 23.0 ],
 									"text" : "jit.rgb2hsl"
 								}
 
@@ -2069,6 +2103,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
@@ -2702,7 +2737,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-128", 0 ],
-									"order" : 4,
+									"order" : 3,
 									"source" : [ "obj-137", 0 ]
 								}
 
@@ -2718,14 +2753,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
-									"order" : 2,
-									"source" : [ "obj-137", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-52", 0 ],
 									"order" : 1,
 									"source" : [ "obj-137", 0 ]
 								}
@@ -2734,7 +2761,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-91", 0 ],
-									"order" : 3,
+									"order" : 2,
 									"source" : [ "obj-137", 0 ]
 								}
 
@@ -2761,6 +2788,14 @@
 									"destination" : [ "obj-5", 0 ],
 									"midpoints" : [ 594.5, 145.0, 751.979395409425024, 145.0 ],
 									"order" : 1,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"order" : 3,
 									"source" : [ "obj-14", 0 ]
 								}
 
@@ -2811,6 +2846,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-19", 3 ],
 									"source" : [ "obj-52", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-52", 0 ],
+									"source" : [ "obj-6", 2 ]
 								}
 
 							}
@@ -2948,7 +2990,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2961,7 +3003,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3043,49 +3085,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.HSflow.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "cv.jit.features.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pipo.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warmness_analysis.maxpat",
-				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
