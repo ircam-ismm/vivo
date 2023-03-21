@@ -3,18 +3,18 @@ Vivo is a toolbox based on Mubu that allows you to analyze and control video dat
 
 ## Requirement
 ### Max Packages 
--Mubu
--(cv.jit) OpticalFlow is based on cv.jithsflow
--Optional : Catart patches for parameters mapping
+*Mubu
+*(cv.jit) OpticalFlow is based on cv.jithsflow
+*Optional : Catart patches for parameters mapping
 
 ## Analysis 
 Vivo is based on vivo.process abstractions. It takes matrix input and outputs a list of values as following 
 
 ### Warmness analysis 
 Warmness ratio based on RGB analysis. 
--0. - 0.5 : cold
--0.5 - 1. : warm
--above : red saturation 
+*0. to 0.5 : cold
+*0.5 to 1. : warm
+*above : red saturation 
 
 ### Sharpness detection
 Based en Sobel detection, it outputs a sharpness ratio (0. - 1.). The lower the ratio, the more blurred the image.
