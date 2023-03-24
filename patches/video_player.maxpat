@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -36.0, -920.0, 814.0, 784.0 ],
+		"rect" : [ -36.0, -920.0, 1275.0, 741.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -46,6 +46,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 571.0, 342.799987999999985, 39.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 564.0, 310.799987999999985, 39.0, 22.0 ],
 					"text" : "192.1"
 				}
 
@@ -544,9 +546,9 @@
  ]
 					}
 ,
-					"patching_rect" : [ 427.0, 397.0, 115.0, 175.0 ],
+					"patching_rect" : [ 427.0, 397.0, 102.0, 179.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 555.0, 356.0, 128.0, 128.0 ],
+					"presentation_rect" : [ 553.0, 370.0, 158.0, 185.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -573,7 +575,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 303.0, 413.09997599999997, 80.0, 35.0 ]
+					"patching_rect" : [ 303.0, 413.09997599999997, 80.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 301.0, 427.09997599999997, 80.0, 35.0 ]
 				}
 
 			}
@@ -3627,6 +3631,8 @@
 					}
 ,
 					"patching_rect" : [ 0.0, 342.799987999999985, 62.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -2.0, 356.799987999999985, 62.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3657,7 +3663,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 202.449981745887726, 177.0, 82.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1250.0, 332.0, 177.0, 82.0 ],
+					"presentation_rect" : [ 139.0, 291.0, 177.0, 82.0 ],
 					"prototypename" : "pixl",
 					"varname" : "texture2matrix",
 					"viewvisibility" : 1
@@ -3683,7 +3689,7 @@
 					"outlettype" : [ "jit_gl_texture", "signal", "signal", "" ],
 					"patching_rect" : [ 0.0, 0.0, 348.0, 170.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1238.0, 79.5, 348.0, 170.0 ],
+					"presentation_rect" : [ 127.0, 38.5, 348.0, 170.0 ],
 					"prototypename" : "pixl",
 					"varname" : "avplayr",
 					"viewvisibility" : 1
