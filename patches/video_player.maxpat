@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 571.0, 342.799987999999985, 39.0, 22.0 ],
+					"text" : "192.1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -50,7 +62,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
 					"patcher" : 					{
@@ -64,7 +76,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -33.0, -871.0, 640.0, 480.0 ],
+						"rect" : [ 419.0, -824.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -93,6 +105,19 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 500.0, 45.0, 31.0, 31.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-34",
 									"maxclass" : "newobj",
@@ -261,7 +286,7 @@
 									"patching_rect" : [ 17.0, 77.0, 72.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.0, 77.0, 72.0, 22.0 ],
-									"text" : "192.168.1.2"
+									"text" : "192.1"
 								}
 
 							}
@@ -367,6 +392,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-27", 0 ],
 									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 1 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -3661,6 +3693,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-118", 0 ],
 					"order" : 0,
 					"source" : [ "obj-63", 0 ]
@@ -3805,8 +3844,8 @@
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/Documents/GitHub/BoB/src",
-				"patcherrelativepath" : "../../BoB/src",
+				"bootpath" : "~/Documents/GitHub/vivo/patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3819,7 +3858,7 @@
 , 			{
 				"name" : "optical_flow.maxpat",
 				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : "../patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3836,7 +3875,7 @@
 , 			{
 				"name" : "sharpness_detection.maxpat",
 				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : "../patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3915,7 +3954,7 @@
 , 			{
 				"name" : "warmness_analysis.maxpat",
 				"bootpath" : "~/Documents/GitHub/vivo/patches",
-				"patcherrelativepath" : "../patches",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
