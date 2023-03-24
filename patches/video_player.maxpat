@@ -40,12 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "OSC_send.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 570.0, 482.0, 113.0, 161.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.0, 342.799987999999985, 39.0, 22.0 ],
+					"patching_rect" : [ 664.0, 448.59997599999997, 39.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 564.0, 310.799987999999985, 39.0, 22.0 ],
 					"text" : "192.1"
@@ -78,7 +98,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 419.0, -824.0, 640.0, 480.0 ],
+						"rect" : [ 341.0, -780.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -546,7 +566,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 427.0, 397.0, 102.0, 179.0 ],
+					"patching_rect" : [ 387.0, 525.0, 102.0, 179.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 553.0, 370.0, 158.0, 185.0 ],
 					"viewvisibility" : 1
@@ -3699,7 +3719,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 1 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -3738,7 +3758,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"order" : 0,
 					"source" : [ "obj-90", 0 ]
 				}
@@ -3746,8 +3766,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-94", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"order" : 1,
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-94", 0 ],
+					"order" : 2,
 					"source" : [ "obj-90", 0 ]
 				}
 
@@ -3835,6 +3863,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "OSC_send.maxpat",
+				"bootpath" : "~/Documents/GitHub/vivo/patches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "cv.jit.HSflow.mxo",
 				"type" : "iLaX"
 			}
