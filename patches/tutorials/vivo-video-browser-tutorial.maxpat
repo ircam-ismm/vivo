@@ -3492,7 +3492,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1740.066664572204672, 157.0, 92.60000209446207, 22.0 ],
-									"text" : "2 1 0 3"
+									"text" : "2 1 0 4"
 								}
 
 							}
@@ -8703,7 +8703,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 235.5, 356.266369462013245, 50.0, 22.0 ],
-									"text" : "248 1"
+									"text" : "155 1"
 								}
 
 							}
@@ -9270,7 +9270,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 33.0 ],
-					"text" : "Analysis done: loaded 4454.10 MB of image data in 537 patches in 1 buffers."
+					"text" : "Analysis done: loaded 9522.00 MB of image data in 1148 patches in 2 buffers."
 				}
 
 			}
@@ -13370,7 +13370,7 @@
 					"patching_rect" : [ 144.0, 1681.164921075954226, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 96.916663999999997, 720.799987999999985, 72.996299999999962, 20.0 ],
-					"text" : "Index: 325"
+					"text" : "Index: 146"
 				}
 
 			}
@@ -13394,9 +13394,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 428.5, 1763.387141675605562, 735.5, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 7.0, 770.799987999999985, 380.0, 33.0 ],
-					"text" : "importing: Macintosh HD:/Users/mateofayet/Documents/GitHub/vivo/media/textures.mov"
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 7.0, 770.799987999999985, 380.0, 47.0 ],
+					"text" : "importing: Macintosh HD:/Users/mateofayet/Documents/GitHub/vivo/media/blading_rgb.mov"
 				}
 
 			}
@@ -13421,7 +13421,7 @@
 					"patching_rect" : [ 254.837608257929446, 1681.164921075954226, 98.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 745.799987999999985, 162.91296399999996, 20.0 ],
-					"text" : "Start: 15589 ms"
+					"text" : "Start: 7147 ms"
 				}
 
 			}
@@ -13904,7 +13904,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 779.75, 110.999999999999972, 39.0, 22.0 ],
-									"text" : "248 1"
+									"text" : "148 1"
 								}
 
 							}
@@ -18248,20 +18248,20 @@
 					"continousediting" : 0,
 					"cursor_circleedgecolor" : [ 1.0, 0.0, 0.0, 0.69 ],
 					"cursor_circlefillcolor" : [ 0.905882352941176, 0.603921568627451, 0.603921568627451, 0.55 ],
-					"cursor_circlefilled" : 0,
-					"cursor_circleheight" : 0.469824552536011,
-					"cursor_circlewidth" : 0.934162616729736,
+					"cursor_circlefilled" : 1,
+					"cursor_circleheight" : 0.0,
+					"cursor_circlewidth" : 0.0,
 					"cursor_color" : [ 0.776471, 0.066667, 0.066667, 0.286275 ],
 					"cursor_followmouse" : 0,
-					"cursor_nearest" : 1,
+					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 0.939781328179682,
+					"cursor_position" : 0.937892101108305,
 					"cursor_shape" : "cross",
 					"cursor_size" : 1,
 					"cursor_sizeunit" : 1,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 0.000392509587434, 0.939781328179682 ],
+					"domain_bounds" : [ -0.004549277183577, 0.937892101108305 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
