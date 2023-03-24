@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+		"rect" : [ 799.0, -777.0, 638.0, 478.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 504.0, 55.0, 31.0, 22.0 ],
+					"text" : "t b s"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
 					"index" : 0,
@@ -47,7 +59,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 500.0, 45.0, 31.0, 31.0 ]
+					"patching_rect" : [ 504.0, 21.5, 31.0, 31.0 ]
 				}
 
 			}
@@ -132,7 +144,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 458.0, 410.0, 50.0, 35.0 ],
+					"patching_rect" : [ 458.0, 410.0, 50.0, 36.0 ],
 					"text" : "port 9000"
 				}
 
@@ -217,7 +229,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 77.0, 72.0, 22.0 ],
+					"patching_rect" : [ 2.0, 77.0, 100.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.0, 77.0, 72.0, 22.0 ],
 					"text" : "192.1"
@@ -230,10 +242,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 13.0, 55.0, 80.0, 20.0 ],
+					"patching_rect" : [ 23.5, 55.0, 59.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 13.0, 55.0, 80.0, 20.0 ],
-					"text" : "Set IP adress"
+					"text" : "IP adress"
 				}
 
 			}
@@ -331,7 +343,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 1 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -430,6 +442,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 1 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
