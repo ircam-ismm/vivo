@@ -8,6 +8,8 @@
 			"architecture" : "x64",
 			"modernui" : 1
 		}
+,
+		"classnamespace" : "box",
 		"rect" : [ 254.0, -889.0, 1184.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
