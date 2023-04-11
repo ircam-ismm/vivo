@@ -55,6 +55,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1357.0, 511.700012000000015, 251.0, 152.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1357.0, 511.700012000000015, 251.0, 152.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -5164,7 +5166,7 @@
 					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 1484.503107355335032,
+					"cursor_position" : -1.0,
 					"cursor_shape" : "cross",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 1,
