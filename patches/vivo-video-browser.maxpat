@@ -924,7 +924,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.059389746752402, 371.700012000000015, 100.0, 35.0 ],
+					"patching_rect" : [ 192.059389746752402, 371.700012000000015, 100.0, 36.0 ],
 					"text" : "loadmess clearall"
 				}
 
@@ -996,7 +996,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 653.0, 348.5, 131.0, 22.0 ],
-									"text" : "done 3"
+									"text" : "done 1"
 								}
 
 							}
@@ -1981,7 +1981,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-95",
-									"items" : [ "dozer.mov", ",", "blading.mov", ",", "dishes.mov" ],
+									"items" : "Movie-23.04.12-11h51m27s.mov",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4300,7 +4300,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1740.066664572204672, 157.0, 92.60000209446207, 22.0 ],
-									"text" : "4 2 0 2"
+									"text" : "2 11 13 8"
 								}
 
 							}
@@ -5728,7 +5728,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.416678684371959, 77.0, 229.0, 127.0 ],
+					"patching_rect" : [ 322.416678684371959, 77.0, 653.0, 131.0 ],
 					"text" : "Korg nanoKontrol startup in CC mode!!!!!:\n\nSet Marker + \nCycle\tCC mode\nREW\tCubase\nFF\tDigital Performer\nSTOP\tAbleton Live\nPLAY\tProtools\nREC\tSonar"
 				}
 
@@ -5765,7 +5765,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1243.0, 676.0, 171.0, 35.0 ],
+					"patching_rect" : [ 1243.0, 676.0, 171.0, 36.0 ],
 					"text" : "/cocavs/target 0.555247 0.925476"
 				}
 
@@ -6312,7 +6312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1994.900006234645844, 1109.241672178157842, 291.0, 35.0 ],
+					"patching_rect" : [ 1994.900006234645844, 1109.241672178157842, 291.0, 36.0 ],
 					"text" : "\"System:/Users/schwarz/src/cocavs/patches//cocavs 2022-05-18@17-43-57-video-only\""
 				}
 
@@ -6456,7 +6456,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1835.0, 1109.803101612495084, 80.0, 35.0 ],
+					"patching_rect" : [ 1835.0, 1109.803101612495084, 80.0, 36.0 ],
 					"text" : "write $1.mov 30 h264"
 				}
 
@@ -6731,7 +6731,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 974.5, 1885.07389869025792, 400.0, 49.0 ],
+					"patching_rect" : [ 974.5, 1885.07389869025792, 400.0, 50.0 ],
 					"text" : "addtrack descr @matrixcols 10 @matrixcolnames Duration FrequencyMean EnergyMean PeriodicityMean AC1Mean LoudnessMean CentroidMean SpreadMean SkewnessMean KurtosisMean"
 				}
 
@@ -6778,7 +6778,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1481.5, 824.98818291102225, 222.0, 62.0 ],
+					"patching_rect" : [ 1481.5, 824.98818291102225, 222.0, 64.0 ],
 					"text" : "0.498605 0.498605 0.498605 0.07907 0.066047 0.815814 0.443721 0.75907 0.052093 0.64093 0.868837 0.393488 0.738605 0.793488 0.498605 0.498605"
 				}
 
@@ -6891,7 +6891,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1122.20000022649765, 1534.514531075954437, 150.0, 33.0 ],
+					"patching_rect" : [ 1122.20000022649765, 1534.514531075954437, 150.0, 34.0 ],
 					"text" : "record what's happening:\nin/outputs"
 				}
 
@@ -7028,7 +7028,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1105.70000022649765, 1572.0, 164.0, 35.0 ],
+					"patching_rect" : [ 1105.70000022649765, 1572.0, 164.0, 36.0 ],
 					"text" : "mubu.multitrack.record trace 500 10s"
 				}
 
@@ -7642,9 +7642,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 144.335541919914277, 1191.000000715255737, 80.0, 35.0 ],
+					"patching_rect" : [ 144.335541919914277, 1191.000000715255737, 80.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.0, 462.046709924087395, 80.0, 35.0 ]
+					"presentation_rect" : [ 104.0, 462.046709924087395, 80.0, 36.0 ]
 				}
 
 			}
@@ -7667,7 +7667,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 504.0, 590.0, 831.0, 665.0 ],
+						"rect" : [ 819.0, -809.0, 829.0, 663.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -7766,7 +7766,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 347.666666666666742, 601.833348999999998, 80.0, 35.0 ]
+									"patching_rect" : [ 347.666666666666742, 601.833348999999998, 80.0, 36.0 ]
 								}
 
 							}
@@ -8100,7 +8100,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 96.333333333333258, 211.499997986721041, 85.0, 33.0 ],
+									"patching_rect" : [ 96.333333333333258, 211.499997986721041, 85.0, 34.0 ],
 									"text" : "matrix/texture to render"
 								}
 
@@ -8125,8 +8125,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 119.249988999999999, 147.5, 91.0, 35.0 ],
-									"presentation_linecount" : 2,
+									"patching_rect" : [ 119.249988999999999, 147.5, 91.0, 36.0 ],
 									"text" : "target $2, getframe $1"
 								}
 
@@ -8142,7 +8141,7 @@
 									"patching_rect" : [ 66.000005373069769, 554.166651090488472, 270.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 113.666663999999997, 426.65002400000003, 101.0, 62.0 ],
+									"presentation_rect" : [ 113.666663999999997, 426.65002400000003, 101.0, 64.0 ],
 									"text" : "jit.world cocavs @enable 1 @erase_color 0 0 0 1"
 								}
 
@@ -8373,7 +8372,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.084320187568665, 889.514531075954437, 167.0, 47.0 ],
+					"patching_rect" : [ 645.084320187568665, 889.514531075954437, 167.0, 48.0 ],
 					"text" : "when MIDI-mapped, defer to low-priority thread to avoid deadlock with jitter"
 				}
 
@@ -8408,7 +8407,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 378.0, 259.999984999999981, 56.0, 33.0 ],
+					"patching_rect" : [ 378.0, 259.999984999999981, 56.0, 34.0 ],
 					"text" : "sensel osc in"
 				}
 
@@ -8443,7 +8442,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 72.0, 520.0, 640.0, 480.0 ],
+						"rect" : [ 210.0, 233.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -9154,7 +9153,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 602.084320187568665, 732.799987999999985, 106.0, 33.0 ],
+					"patching_rect" : [ 602.084320187568665, 732.799987999999985, 106.0, 34.0 ],
 					"text" : "just for braindead Max midi mapping"
 				}
 
@@ -9241,8 +9240,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.415679812431335, 2111.5, 89.0, 76.0 ],
-					"text" : ";\rx-menu $2;\ry-menu $3;\rcolor-menu $4;\rsize-menu $5"
+					"patching_rect" : [ 65.415679812431335, 2111.5, 89.0, 77.0 ],
+					"text" : ";\r\nx-menu $2;\r\ny-menu $3;\r\ncolor-menu $4;\r\nsize-menu $5"
 				}
 
 			}
@@ -9531,7 +9530,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 235.5, 356.266369462013245, 50.0, 22.0 ],
-									"text" : "21 3"
+									"text" : "606 1"
 								}
 
 							}
@@ -10097,8 +10096,8 @@
 					"patching_rect" : [ 21.0, 342.700012000000015, 447.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 33.0 ],
-					"text" : "Analysis done: loaded 2596.10 MB of image data in 313 patches in 3 buffers."
+					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 34.0 ],
+					"text" : "Analysis done: loaded 5266.90 MB of image data in 635 patches in 1 buffers."
 				}
 
 			}
@@ -10134,8 +10133,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.166654109954834, 5.0, 130.0, 35.0 ],
-					"text" : ";\rmax clearmaxwindow"
+					"patching_rect" : [ 439.166654109954834, 5.0, 130.0, 36.0 ],
+					"text" : ";\r\nmax clearmaxwindow"
 				}
 
 			}
@@ -10609,7 +10608,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 108.190609879564875, 941.514531075954437, 45.0, 33.0 ],
+					"patching_rect" : [ 108.190609879564875, 941.514531075954437, 45.0, 34.0 ],
 					"text" : "forced synth"
 				}
 
@@ -10784,7 +10783,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1024.0, 805.276366999999937, 70.0, 35.0 ],
+					"patching_rect" : [ 1024.0, 805.276366999999937, 70.0, 36.0 ],
 					"text" : "0.374548 0.225483"
 				}
 
@@ -11094,7 +11093,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.416678684371959, 631.849609999999984, 95.0, 47.0 ],
+					"patching_rect" : [ 322.416678684371959, 631.849609999999984, 95.0, 48.0 ],
 					"text" : "keep in sync after mode change"
 				}
 
@@ -13272,7 +13271,7 @@
 					"patching_rect" : [ 144.0, 1681.164921075954226, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 99.916663999999997, 605.799987999999985, 72.996299999999962, 20.0 ],
-					"text" : "Index: 22"
+					"text" : "Index: 595"
 				}
 
 			}
@@ -13321,7 +13320,7 @@
 					"patching_rect" : [ 254.837608257929446, 1681.164921075954226, 98.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 630.799987999999985, 162.91296399999996, 20.0 ],
-					"text" : "Start: 1534 ms"
+					"text" : "Start: 22877 ms"
 				}
 
 			}
@@ -13568,7 +13567,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 881.5, 180.500061000000017, 129.0, 35.0 ],
-									"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1."
+									"text" : "0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0."
 								}
 
 							}
@@ -13760,7 +13759,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-58",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -13804,7 +13803,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 779.75, 110.999999999999972, 39.0, 22.0 ],
-									"text" : "21 3"
+									"text" : "606 1"
 								}
 
 							}
@@ -13935,7 +13934,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-36",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -14140,7 +14139,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-10",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -14292,6 +14291,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-5",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -14902,7 +14902,7 @@
 					"patching_rect" : [ 123.25, 529.073898690258034, 215.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 36.5, 252.514531075954437, 115.0, 33.0 ],
+					"presentation_rect" : [ 36.5, 252.514531075954437, 115.0, 34.0 ],
 					"text" : "click mode: select only on mouse click"
 				}
 
@@ -18032,7 +18032,7 @@
 					"patching_rect" : [ 46.726053746752399, 288.900023999999974, 181.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 184.014531075954437, 121.0, 35.0 ],
+					"presentation_rect" : [ 10.0, 184.014531075954437, 121.0, 36.0 ],
 					"text" : "vivo.analysis imcorpus imdescr",
 					"varname" : "corpus-analysis"
 				}
@@ -18250,12 +18250,12 @@
 					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 1486.230508474576254,
-					"cursor_shape" : "bar",
+					"cursor_position" : 1.0,
+					"cursor_shape" : "cross",
 					"cursor_size" : 1,
-					"cursor_sizeunit" : 0,
-					"cursor_visible" : 0,
-					"domain_bounds" : [ 0.0, 3066.0 ],
+					"cursor_sizeunit" : 1,
+					"cursor_visible" : 1,
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -18443,9 +18443,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 5.0, 417.0, 33.0 ],
+					"patching_rect" : [ 8.0, 5.0, 417.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 5.0, 304.0, 33.0 ],
+					"presentation_rect" : [ 8.0, 5.0, 304.0, 34.0 ],
 					"text" : "VIVO Image Browser"
 				}
 
@@ -18461,7 +18461,7 @@
 					"patching_rect" : [ 8.0, 34.0, 430.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 8.0, 34.0, 260.0, 47.0 ],
+					"presentation_rect" : [ 8.0, 34.0, 260.0, 48.0 ],
 					"text" : "corpus-based concatenative audio–visual synthesis"
 				}
 
@@ -18513,7 +18513,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.240740895271301, 1530.424180180682924, 117.518518209457397, 35.0 ],
+					"patching_rect" : [ 452.240740895271301, 1530.424180180682924, 117.518518209457397, 36.0 ],
 					"text" : "getinfo FileName, getinfo FilePath"
 				}
 
@@ -20802,86 +20802,78 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "camu.cont.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.imubu.control.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.menu.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.filter.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.select.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.target.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.triggermode.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cputime-message.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.features.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.features.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "ftm.jitter.mxo",
-				"type" : "iLaX"
+				"name" : "imubu.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "ftm.mess.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ftm.object.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "imubu.mxo",
-				"type" : "iLaX"
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "jit.polymovie.maxpat",
@@ -20896,42 +20888,31 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "make-name.maxpat",
-				"bootpath" : "~/lib/maxmsp",
-				"patcherrelativepath" : "../../../lib/maxmsp",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "mubu.knn.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "mnm.hist.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.knn.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "mubu.model.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.model.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "mubu.multitrack.record.maxpat",
-				"bootpath" : "~/src/mubu-and-co/maxmubu/patches/patchers",
-				"patcherrelativepath" : "../../mubu-and-co/maxmubu/patches/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/MuBu For Max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "mubu.track.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.track.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "pipo.mxo",
-				"type" : "iLaX"
+				"name" : "pipo.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "thru.maxpat",
@@ -20941,14 +20922,14 @@
 			}
 , 			{
 				"name" : "vivo.analysis.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vivo.process.color+keypoints.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
