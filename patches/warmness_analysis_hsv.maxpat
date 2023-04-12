@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 22.0, 79.0, 2186.0, 1086.0 ],
+		"rect" : [ 33.0, -996.0, 1854.0, 931.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,219 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"cols" : 320,
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-16",
+					"maxclass" : "jit.cellblock",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "list", "", "", "" ],
+					"patching_rect" : [ 1071.5, 980.0, 518.0, 255.0 ],
+					"rows" : 240
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
+					"patching_rect" : [ 1399.25, 894.5, 114.0, 22.0 ],
+					"text" : "jit.unpack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 1274.75, 789.0, 190.0, 22.0 ],
+					"text" : "jit.matrix THETA 4 float32 320 240"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 5,
+							"revision" : 3,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "jit.gen",
+						"rect" : [ 42.0, 79.0, 629.0, 495.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 505.5, 424.0, 35.0, 22.0 ],
+									"text" : "out 4"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 349.5, 424.0, 35.0, 22.0 ],
+									"text" : "out 3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 190.666666666666657, 420.0, 35.0, 22.0 ],
+									"text" : "out 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 35.0, 14.0, 28.0, 22.0 ],
+									"text" : "in 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 305.0, 14.0, 28.0, 22.0 ],
+									"text" : "in 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"code" : "//a = swiz(in1, 0) (4plan matrix)\r\nh = swiz(in1, 1);\r\ns = swiz(in1, 2);\r\nv = swiz(in1, 3);\r\nT = h;\r\nw = s * v; // weighting\r\n\r\nh = h*360; //hue on a 360° circle\r\n\r\n\r\nif (h > 75 && h < 285)\r\n\r\n\tT = -1;\r\nelse\r\n\tT = 1;\r\n\t\r\ntheta = T * w;\r\n\r\nout1 = h;\r\nout2 = T;\r\nout3 = theta;\r\nout4 = vec(h, T, theta);\r\n\r\n\r\n\r\n",
+									"fontface" : 0,
+									"fontname" : "<Monospaced>",
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "codebox",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 35.0, 55.0, 486.0, 323.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 35.0, 415.0, 35.0, 22.0 ],
+									"text" : "out 1"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-3", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-3", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-3", 3 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1274.75, 862.0, 185.0, 22.0 ],
+					"text" : "jit.gen @title binary_assignement"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"cols" : 2048,
 					"colwidth" : 37,
@@ -102,7 +315,7 @@
 						}
 ,
 						"classnamespace" : "jit.gen",
-						"rect" : [ 637.0, 664.0, 597.0, 713.0 ],
+						"rect" : [ 334.0, 84.0, 597.0, 711.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -136,7 +349,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 419.5, 656.0, 35.0, 22.0 ],
+									"patching_rect" : [ 423.0, 554.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -155,7 +368,7 @@
 							}
 , 							{
 								"box" : 								{
-									"code" : "\r\nwarmness (h, s, v)\r\n{\r\nT = 0;\r\nw = s * v; //weighted \r\nh = h*360; //hue on a 360° circle\r\n\r\n\r\nif (h > 75 && h < 285) //binary assignement\r\n\tT = -1;\r\nelse\r\n\tT = 1;\r\n\t\r\ntheta = T * w;\r\n\r\nreturn theta; \r\n}\r\n\r\nindex = swiz(cell, 0); // histogram bin index\r\n\r\n// decode color\r\nh = floor(index / 256);\r\ns = floor((index - h * 256) / 8);\r\nv = floor((index - h * 256 - s * 8) / 8);\r\n\r\ntheta = warmness(h, s, v);\r\n\r\nout1 = theta;\r\n\r\n// debug\r\nout2 = index;\r\n",
+									"code" : "\r\nwarmness (h, s, v)\r\n{\r\nT = 0;\r\nw = s * v; //weighted \r\nh = h*360; //hue on a 360° circle\r\n\r\n\r\nif (h > 75 && h < 285) //binary assignement\r\n\tT = -1;\r\nelse\r\n\tT = 1;\r\n\t\r\ntheta = T * w;\r\n\r\n//return theta; \r\n}\r\n\r\nindex = swiz(cell, 0); // histogram bin index\r\n\r\n// decode color\r\nh = floor(index / 256);\r\ns = floor((index - h * 256) / 8);\r\nv = floor((index - h * 256 - s * 8) / 8);\r\n\r\ntheta = warmness(h, s, v);\r\n\r\nout1 = theta;\r\n\r\n// debug\r\nout2 = index;\r\n",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -174,7 +387,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 31.5, 666.0, 35.0, 22.0 ],
+									"patching_rect" : [ 35.0, 564.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -473,7 +686,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "", "", "" ],
-					"patching_rect" : [ 884.5, 640.0, 518.0, 255.0 ],
+					"patching_rect" : [ 635.0, 667.0, 518.0, 255.0 ],
 					"rows" : 240
 				}
 
@@ -485,7 +698,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 837.0, 599.0, 114.0, 22.0 ],
+					"patching_rect" : [ 587.5, 627.0, 114.0, 22.0 ],
 					"text" : "jit.unpack"
 				}
 
@@ -497,8 +710,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 767.75, 429.0, 173.0, 22.0 ],
-					"text" : "jit.matrix hue 4 float32 320 240"
+					"patching_rect" : [ 767.75, 429.0, 149.0, 22.0 ],
+					"text" : "jit.matrix 4 float32 320 240"
 				}
 
 			}
@@ -835,7 +1048,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1009.75, 586.0, 97.0, 35.0 ],
+					"patching_rect" : [ 1009.75, 586.0, 97.0, 36.0 ],
 					"text" : "jit.gen @t warmness"
 				}
 
@@ -1091,7 +1304,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.0, 698.5, 102.0, 47.0 ],
+					"patching_rect" : [ 461.0, 698.5, 102.0, 48.0 ],
 					"text" : "cold range [-1, 0]\nwarm range [0, 1]\nPER BIN"
 				}
 
@@ -1187,7 +1400,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.75, 591.0, 57.0, 47.0 ],
+					"patching_rect" : [ 189.75, 591.0, 57.0, 48.0 ],
 					"text" : "cold -1\nwarm +1\nPER BIN"
 				}
 
@@ -1199,7 +1412,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.75, 501.0, 153.0, 47.0 ],
+					"patching_rect" : [ 460.75, 501.0, 153.0, 48.0 ],
 					"text" : "Tn(Hn) = { −1 , if 75◦ < Hn < 285◦ +1 , if 0◦ ≤ Hn ≤ 75◦ or 285◦ ≤ Hn ≤ 360◦"
 				}
 
@@ -1507,6 +1720,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1562,6 +1782,13 @@
 					"destination" : [ "obj-149", 0 ],
 					"order" : 0,
 					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-14", 3 ]
 				}
 
 			}
@@ -1785,7 +2012,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"order" : 2,
+					"source" : [ "obj-274", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-266", 0 ],
+					"order" : 1,
+					"source" : [ "obj-274", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-276", 0 ],
+					"order" : 0,
 					"source" : [ "obj-274", 0 ]
 				}
 
@@ -1975,6 +2219,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-7", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-79", 0 ],
 					"source" : [ "obj-71", 0 ]
 				}
@@ -2024,6 +2275,10 @@
 				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0
