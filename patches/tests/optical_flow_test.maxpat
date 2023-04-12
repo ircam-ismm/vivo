@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 143.0, -971.0, 1352.0, 935.0 ],
+		"rect" : [ 34.0, -995.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,126 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"annotation" : "## An LFO-based VIZZIE data generator ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-110",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.oscil8r.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1557.0, 77.0, 200.0, 146.0 ],
+					"prototypename" : "pixl",
+					"varname" : "oscil8r[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## An LFO-based VIZZIE data generator ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-109",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.oscil8r.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1350.0, 81.0, 200.0, 146.0 ],
+					"prototypename" : "pixl",
+					"varname" : "oscil8r",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 1350.0, 518.0, 71.0, 22.0 ],
+					"text" : "jit.rgb2luma"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1293.0, 469.0, 100.0, 22.0 ],
+					"text" : "vz.texture2matrix",
+					"varname" : "vz.texture2matrix"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## View or monitor video input ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-87",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.viewr.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 1467.0, 521.5, 230.0, 208.0 ],
+					"prototypename" : "pixl",
+					"varname" : "viewr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "## Move an image left/right/up/down ##",
+					"bgmode" : 1,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-51",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "vz.pannr.maxpat",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "jit_gl_texture" ],
+					"patching_rect" : [ 1293.0, 328.5, 198.0, 130.0 ],
+					"prototypename" : "pixl",
+					"varname" : "pannr",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-86",
@@ -290,17 +410,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "lcd",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "list", "list", "int", "" ],
-					"patching_rect" : [ 978.0, 804.0, 128.0, 128.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-113",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -416,7 +525,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1015.0, 703.0, 50.0, 22.0 ],
-					"text" : "left"
+					"text" : "right"
 				}
 
 			}
@@ -1052,7 +1161,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.0, 86.0, 135.0, 47.0 ],
+					"patching_rect" : [ 335.0, 86.0, 135.0, 48.0 ],
 					"style" : "default",
 					"text" : "2-plane float32 matrix.\nPlane 0: Horizontal flow\nPlane 1: Vertical flow"
 				}
@@ -1207,7 +1316,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 145.0, 118.0, 37.0 ],
+					"patching_rect" : [ 290.0, 145.0, 118.0, 38.0 ],
 					"text" : "by Jean-Marc Pelletier\rjmp@jmpelletier.com\rCopyright ©2003-2020"
 				}
 
@@ -1250,7 +1359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.0, 645.0, 355.0, 47.0 ],
+					"patching_rect" : [ 36.0, 645.0, 355.0, 48.0 ],
 					"style" : "default",
 					"text" : "The values of the output matrix are estimations of that pixel's displacement compared to the previous frame. Negative values indicate leftward and upward movements."
 				}
@@ -2053,8 +2162,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-101", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 1 ],
+					"source" : [ "obj-109", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 2 ],
+					"source" : [ "obj-110", 0 ]
 				}
 
 			}
@@ -2365,6 +2502,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"order" : 0,
+					"source" : [ "obj-51", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"order" : 1,
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -2695,6 +2848,29 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-101::obj-22" : [ "range[12]", "range", 0 ],
+			"obj-101::obj-24" : [ "umenu[3]", "dim", 0 ],
+			"obj-101::obj-5::obj-23" : [ "gswitch2[3]", "gswitch2", 0 ],
+			"obj-109::obj-10" : [ "Frequency", "Frequency", 0 ],
+			"obj-109::obj-109" : [ "pictctrl[105]", "pictctrl[3]", 0 ],
+			"obj-109::obj-113" : [ "pictctrl[104]", "pictctrl[3]", 0 ],
+			"obj-109::obj-12" : [ "Waveform", "Waveform", 0 ],
+			"obj-109::obj-13" : [ "phase[13]", "Phase", 0 ],
+			"obj-109::obj-265" : [ "pictctrl[91]", "pictctrl[3]", 0 ],
+			"obj-109::obj-278" : [ "textbutton[2]", "textbutton[1]", 1 ],
+			"obj-109::obj-49" : [ "pictctrl[89]", "pictctrl[1]", 0 ],
+			"obj-109::obj-91" : [ "pictctrl[106]", "pictctrl[3]", 0 ],
+			"obj-109::obj-96" : [ "Multiply", "Multiply", 0 ],
+			"obj-110::obj-10" : [ "Frequency[1]", "Frequency", 0 ],
+			"obj-110::obj-109" : [ "pictctrl[11]", "pictctrl[3]", 0 ],
+			"obj-110::obj-113" : [ "pictctrl[13]", "pictctrl[3]", 0 ],
+			"obj-110::obj-12" : [ "Waveform[1]", "Waveform", 0 ],
+			"obj-110::obj-13" : [ "phase[1]", "Phase", 0 ],
+			"obj-110::obj-265" : [ "pictctrl[12]", "pictctrl[3]", 0 ],
+			"obj-110::obj-278" : [ "textbutton[10]", "textbutton[1]", 1 ],
+			"obj-110::obj-49" : [ "pictctrl[9]", "pictctrl[1]", 0 ],
+			"obj-110::obj-91" : [ "pictctrl[10]", "pictctrl[3]", 0 ],
+			"obj-110::obj-96" : [ "Multiply[1]", "Multiply", 0 ],
 			"obj-1::obj-14" : [ "toggle[2]", "toggle[2]", 0 ],
 			"obj-1::obj-25" : [ "toggle", "toggle", 0 ],
 			"obj-1::obj-32" : [ "toggle[3]", "toggle", 0 ],
@@ -2702,11 +2878,55 @@
 			"obj-1::obj-37" : [ "number[2]", "number[2]", 0 ],
 			"obj-1::obj-38" : [ "number", "number", 0 ],
 			"obj-1::obj-8" : [ "toggle[1]", "toggle[1]", 0 ],
+			"obj-51::obj-13" : [ "pictctrl[5]", "pictctrl[1]", 0 ],
+			"obj-51::obj-3" : [ "range[4]", "range", 0 ],
+			"obj-51::obj-37" : [ "Y offset", "Y offset", 0 ],
+			"obj-51::obj-41" : [ "pictctrl[4]", "pictctrl[1]", 0 ],
+			"obj-51::obj-48" : [ "Bound mode", "Bound mode", 0 ],
+			"obj-51::obj-53" : [ "pictctrl[3]", "pictctrl[1]", 0 ],
+			"obj-51::obj-56::obj-23" : [ "gswitch2[2]", "gswitch2", 0 ],
+			"obj-51::obj-68" : [ "X offset", "X offset", 0 ],
+			"obj-87::obj-20" : [ "letterbox_menu", "letterbox_menu", 0 ],
+			"obj-87::obj-37" : [ "aspect_menu", "aspect_menu", 0 ],
 			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-110::obj-10" : 				{
+					"parameter_longname" : "Frequency[1]"
+				}
+,
+				"obj-110::obj-109" : 				{
+					"parameter_longname" : "pictctrl[11]"
+				}
+,
+				"obj-110::obj-113" : 				{
+					"parameter_longname" : "pictctrl[13]"
+				}
+,
+				"obj-110::obj-12" : 				{
+					"parameter_longname" : "Waveform[1]"
+				}
+,
+				"obj-110::obj-13" : 				{
+					"parameter_longname" : "phase[1]"
+				}
+,
+				"obj-110::obj-265" : 				{
+					"parameter_longname" : "pictctrl[12]"
+				}
+,
+				"obj-110::obj-49" : 				{
+					"parameter_longname" : "pictctrl[9]"
+				}
+,
+				"obj-110::obj-91" : 				{
+					"parameter_longname" : "pictctrl[10]"
+				}
+,
+				"obj-110::obj-96" : 				{
+					"parameter_longname" : "Multiply[1]"
 				}
 
 			}
@@ -2722,16 +2942,122 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.HSflow.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.HSflow.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "cv.jit.resize.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.resize.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "data-handler-L.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "data-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "exact_menu.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gen-LFO.gendsp",
+				"bootpath" : "C74:/packages/vizzie/patchers/gen",
+				"type" : "gDSP",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "interfacecolor.js",
 				"bootpath" : "C74:/interfaces",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "snapshot_UI.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "video-handler.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-datatexconvert.js",
+				"bootpath" : "C74:/packages/vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vizzie-global.js",
+				"bootpath" : "C74:/packages/vizzie/code",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.oscil8r.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.pannr.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.texture2matrix.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vz.viewr.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-context.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-disable.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-object.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "vzgl-outputdim.maxpat",
+				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "windowresize.js",
+				"bootpath" : "C74:/packages/vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
