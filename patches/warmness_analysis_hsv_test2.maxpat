@@ -40,13 +40,50 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 490.0, 23.0, 100.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 28.876645864924132,
+					"format" : 6,
+					"id" : "obj-45",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1304.75, 784.0, 144.0, 41.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1304.75, 754.0, 139.0, 22.0 ],
+					"text" : "warmness_analysis_hsv"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-76",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1493.030832529067993, 748.5, 275.309272170066833, 33.0 ],
-					"presentation_linecount" : 5,
 					"text" : "global warmness = sum of weighted histogram: \nTHETA = sum ( f_n * theta_n)"
 				}
 
@@ -59,7 +96,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1482.25, 679.0, 123.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "weighted histogram:  f_n * theta_n"
 				}
 
@@ -71,7 +107,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1485.814338088035583, 407.0, 208.381438851356506, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "histogram of quantized color indices"
 				}
 
@@ -94,7 +129,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1798.968971371650696, 698.5, 266.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "check sum of normalised histogram: should be 1"
 				}
 
@@ -2105,7 +2139,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -2121,6 +2155,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"order" : 2,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
 					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -2431,6 +2473,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -2479,6 +2528,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 1 ],
+					"order" : 0,
+					"source" : [ "obj-48", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"order" : 1,
+					"source" : [ "obj-48", 0 ]
 				}
 
 			}
@@ -2606,6 +2671,13 @@
 				"name" : "interfacecolor.js",
 				"bootpath" : "C74:/interfaces",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "warmness_analysis_hsv.maxpat",
+				"bootpath" : "~/src/vivo/patches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

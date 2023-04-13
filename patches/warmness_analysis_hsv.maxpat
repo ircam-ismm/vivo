@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1230.0, 332.0, 573.0, 946.0 ],
+		"rect" : [ 1286.0, 337.0, 573.0, 946.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,8 +41,21 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
+					"id" : "obj-1",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 318.030832529067993, 27.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
 					"id" : "obj-78",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -58,7 +71,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 32.530832529067993, 764.5, 275.309272170066833, 33.0 ],
-					"presentation_linecount" : 5,
 					"text" : "global warmness = sum of weighted histogram: \nTHETA = sum ( f_n * theta_n)"
 				}
 
@@ -71,7 +83,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.75, 695.0, 123.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "weighted histogram:  f_n * theta_n"
 				}
 
@@ -83,7 +94,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 25.314338088035583, 423.0, 208.381438851356506, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "histogram of quantized color indices"
 				}
 
@@ -143,7 +153,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 240.530832529067993, 497.628866672515869, 100.0, 22.0 ],
+					"patching_rect" : [ 240.530832529067993, 497.628866672515869, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -411,7 +421,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 11.0, 121.5, 165.0, 22.0 ],
+					"patching_rect" : [ 11.0, 113.5, 165.0, 22.0 ],
 					"text" : "jit.matrix 4 float32 320 240"
 				}
 
@@ -570,20 +580,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.0, 5.0, 150.0, 20.0 ],
-					"text" : "th"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 11.0, 81.0, 226.0, 22.0 ],
-					"text" : "jit.colorspace @input RGB @output HSV"
+					"patching_rect" : [ 46.25, 32.0, 150.0, 20.0 ],
+					"text" : "ahsv matrix in"
 				}
 
 			}
@@ -591,17 +589,24 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 11.0, 27.0, 30.0, 30.0 ]
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"source" : [ "obj-12", 0 ]
@@ -619,13 +624,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-18", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-263", 0 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -715,7 +713,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-263", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -741,13 +739,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "cv.jit.sum.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
