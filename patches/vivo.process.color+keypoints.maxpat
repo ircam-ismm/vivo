@@ -226,7 +226,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1291.0, 201.0, 1235.0, 652.0 ],
+						"rect" : [ 1185.0, 200.0, 1235.0, 652.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1582,7 +1582,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 428.0, 310.0, 1730.0, 1093.0 ],
+										"rect" : [ 530.0, 487.0, 1342.0, 913.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1612,6 +1612,89 @@
 										"assistshowspatchername" : 0,
 										"visible" : 1,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-49",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 50.0, -11.0, 100.0, 22.0 ],
+													"text" : "t l l"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"#init" : "",
+													"#loadbang" : 0,
+													"#triggerall" : 0,
+													"#untuple" : 0,
+													"fontface" : 0,
+													"fontname" : "Arial",
+													"fontsize" : 12.0,
+													"ftm_objref_conv" : 0,
+													"ftm_scope" : 1,
+													"id" : "obj-23",
+													"maxclass" : "ftm.mess",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 472.146095335483551, 106.0, 86.70703125, 18.0 ],
+													"text" : [ "_size ($1 * $2) 2" ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-24",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 472.146095335483551, 60.0, 59.0, 22.0 ],
+													"text" : "route dim"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-25",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 472.146095335483551, 32.0, 73.0, 22.0 ],
+													"text" : "jit.matrixinfo"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"fontname" : "Arial",
+													"fontsize" : 13.0,
+													"id" : "obj-21",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 895.146095335483551, 207.49180269241333, 98.0, 23.0 ],
+													"text" : "prepend samps"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-20",
+													"linecount" : 3,
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 886.001651108264923, 15.799999594688416, 150.0, 47.0 ],
+													"text" : "force rescale to stay below gen's arbitrary loopcount limit of 100000"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-96",
 													"maxclass" : "number",
@@ -1654,8 +1737,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 767.492126822471619, 474.311115562915802, 59.0, 22.0 ],
-													"presentation_linecount" : 2,
-													"text" : "0.104799"
+													"text" : "0.175163"
 												}
 
 											}
@@ -1666,7 +1748,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "float", "bang" ],
-													"patching_rect" : [ 886.001651108264923, 470.319050312042236, 176.0, 22.0 ],
+													"patching_rect" : [ 1012.001651108264923, 365.843043684959412, 176.0, 22.0 ],
 													"text" : "buffer~ histogram @samps 256"
 												}
 
@@ -1703,7 +1785,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 701.457205951213837, 480.66032201051712, 50.0, 22.0 ],
-													"text" : "0."
+													"text" : "80."
 												}
 
 											}
@@ -1727,13 +1809,13 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 754.600008487701416, 362.634426236152649, 237.0, 22.0 ],
-													"presentation_linecount" : 4,
 													"text" : "inputmatrix hsvimage, histogram histogram"
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"fontsize" : 13.0,
 													"id" : "obj-81",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -1780,21 +1862,6 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
-																	"code" : "// clear hist\r\nfor (i = 0; i < dim(histogram); i += 1) \r\n{\r\n\tpoke(histogram, 0, i);\r\n}\r\nout1 = 0;",
-																	"fontface" : 0,
-																	"fontname" : "<Monospaced>",
-																	"fontsize" : 12.0,
-																	"id" : "obj-7",
-																	"maxclass" : "codebox",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 54.0, 56.0, 404.0, 131.0 ]
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-3",
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
@@ -1830,7 +1897,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"code" : "weight = -1;\r\n\r\n// calc hist\r\nfor (i = 0; i < dim(inputmatrix); i += 1) \r\n{\r\n\thue = peek(inputmatrix, i, 1);\r\n\tsat = peek(inputmatrix, i, 2);\r\n\tval = peek(inputmatrix, i, 3);\r\n\t\r\n\thistbin = floor(hue * 255);\r\n\tweight  = sat * val;\r\n\tpoke(histogram, peek(histogram, histbin) + weight, histbin);\r\n}\r\n\r\n// find max\r\nnewMax = peek(histogram, 0);\r\nindex  = 0; // is peek 1-based?????\r\n\r\nfor (i = 1; i < dim(histogram); i += 1) \r\n{\r\n\tvalue = peek(histogram, i);\r\n\tif (value > newMax)\r\n\t{\r\n\t\tnewMax = value;\r\n\t\tindex = i;\r\n\t}\r\n}\r\n\t\r\nout1 = index; // is peek 1-based?????\r\nout2 = weight; ",
+																	"code" : "// clear hist\r\nfor (i = 0; i < dim(histogram); i += 1) \r\n{\r\n\tpoke(histogram, 0, i);\r\n}\r\n\r\nweight = -1; //db\r\n\r\n// calc hist\r\nfor (i = 0; i < dim(inputmatrix); i += 1) \r\n{\r\n\thue = peek(inputmatrix, i, 1);\r\n\tsat = peek(inputmatrix, i, 2);\r\n\tval = peek(inputmatrix, i, 3);\r\n\t\r\n\thistbin = floor(hue * 255);\r\n\tweight  = sat * val;\r\n\tpoke(histogram, peek(histogram, histbin) + weight, histbin);\r\n}\r\n\r\n// find max\r\nnewMax = peek(histogram, 0);\r\nindex  = 0; // is peek 1-based?????\r\n\r\nfor (i = 1; i < dim(histogram); i += 1) \r\n{\r\n\tvalue = peek(histogram, i);\r\n\tif (value > newMax)\r\n\t{\r\n\t\tnewMax = value;\r\n\t\tindex = i;\r\n\t}\r\n}\r\n\t\r\nout1 = index; // is peek 1-based?????\r\nout2 = weight; ",
 																	"fontface" : 0,
 																	"fontname" : "<Monospaced>",
 																	"fontsize" : 12.0,
@@ -1839,7 +1906,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 54.0, 212.0, 577.0, 477.0 ]
+																	"patching_rect" : [ 50.0, 42.0, 581.0, 647.0 ]
 																}
 
 															}
@@ -1869,7 +1936,7 @@
  ],
 														"lines" : [ 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-7", 0 ],
+																	"destination" : [ "obj-5", 0 ],
 																	"source" : [ "obj-1", 0 ]
 																}
 
@@ -1888,22 +1955,11 @@
 																}
 
 															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-5", 0 ],
-																	"source" : [ "obj-7", 0 ]
-																}
-
-															}
  ]
 													}
 ,
-													"patching_rect" : [ 718.50164794921875, 437.200000405311584, 29.5, 22.0 ],
-													"saved_object_attributes" : 													{
-														"exportfolder" : "System:/Users/schwarz/src/vivo/patches/tests/"
-													}
-,
-													"text" : "gen"
+													"patching_rect" : [ 718.50164794921875, 437.200000405311584, 171.0, 23.0 ],
+													"text" : "gen @t weighted_histogram"
 												}
 
 											}
@@ -1917,7 +1973,6 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 873.015886545181274, -64.622224807739258, 92.0, 19.0 ],
-													"presentation_linecount" : 2,
 													"text" : "read countdown.mov"
 												}
 
@@ -2314,7 +2369,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 767.492126822471619, 431.700000405311584, 167.081965923309326, 33.0 ],
+													"patching_rect" : [ 789.559025526046753, 402.0, 167.081965923309326, 33.0 ],
 													"text" : "get max of hue histogram weighted by \"colorfullness\" "
 												}
 
@@ -2326,7 +2381,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 641.500009059906006, 15.799999594688416, 70.0, 20.0 ],
-													"presentation_linecount" : 2,
 													"text" : "ahsv matrix"
 												}
 
@@ -2366,7 +2420,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"ftm_objref_conv" : 0,
-													"ftm_scope" : 1,
+													"ftm_scope" : 0,
 													"id" : "obj-55",
 													"maxclass" : "ftm.mess",
 													"numinlets" : 2,
@@ -2443,7 +2497,7 @@
 , 											{
 												"box" : 												{
 													"description" : "fvec $hueluma col 1",
-													"editor_interface" : "",
+													"editor_interface" : "wave",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -2465,7 +2519,7 @@
 , 											{
 												"box" : 												{
 													"description" : "fvec $hueluma col 0",
-													"editor_interface" : "",
+													"editor_interface" : "wave",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -2487,7 +2541,7 @@
 , 											{
 												"box" : 												{
 													"description" : "fmat 2073600 2",
-													"editor_interface" : "matrix",
+													"editor_interface" : "multiwave",
 													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -2628,7 +2682,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 84.5, 12.799999594688416, 67.0, 20.0 ],
+													"patching_rect" : [ 84.500001847743988, -70.122224807739258, 67.0, 20.0 ],
 													"text" : "ahsl matrix"
 												}
 
@@ -2681,7 +2735,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "jit_matrix" ],
-													"patching_rect" : [ 51.0, 12.799999594688416, 30.0, 30.0 ]
+													"patching_rect" : [ 51.000001847743988, -70.122224807739258, 30.0, 30.0 ]
 												}
 
 											}
@@ -2716,7 +2770,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 974.001651108264923, 440.3190504053116, 83.0, 22.0 ],
+													"patching_rect" : [ 1012.001651108264923, 336.143043279647827, 83.0, 22.0 ],
 													"text" : "normalize 1"
 												}
 
@@ -2745,8 +2799,15 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-11", 0 ],
+													"destination" : [ "obj-49", 0 ],
 													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-17", 0 ],
+													"source" : [ "obj-21", 0 ]
 												}
 
 											}
@@ -2759,7 +2820,37 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-37", 0 ],
+													"source" : [ "obj-23", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-23", 0 ],
+													"source" : [ "obj-24", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-24", 0 ],
+													"source" : [ "obj-25", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-46", 0 ],
+													"order" : 0,
+													"source" : [ "obj-26", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-49", 0 ],
+													"order" : 1,
 													"source" : [ "obj-26", 0 ]
 												}
 
@@ -2857,15 +2948,37 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-93", 0 ],
+													"destination" : [ "obj-11", 0 ],
+													"source" : [ "obj-49", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-25", 0 ],
+													"source" : [ "obj-49", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-46", 0 ],
 													"source" : [ "obj-5", 0 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-75", 0 ],
+													"destination" : [ "obj-21", 0 ],
 													"order" : 1,
+													"source" : [ "obj-53", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-75", 0 ],
+													"order" : 2,
 													"source" : [ "obj-53", 0 ]
 												}
 
@@ -2974,8 +3087,16 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-93", 0 ],
+													"destination" : [ "obj-46", 0 ],
 													"order" : 1,
+													"source" : [ "obj-74", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-49", 0 ],
+													"order" : 2,
 													"source" : [ "obj-74", 0 ]
 												}
 
