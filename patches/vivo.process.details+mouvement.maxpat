@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 742.0, 674.0, 1768.0, 698.0 ],
+		"rect" : [ 42.0, -995.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 339.333333333333314, 205.0, 229.0, 23.0 ],
+					"patching_rect" : [ 386.333333333333314, 213.0, 229.0, 23.0 ],
 					"text" : "jit.colorspace @input rgb @output hsv"
 				}
 
@@ -81,7 +81,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 410.0, 430.0, 575.0, 629.0 ],
+						"rect" : [ 419.0, 156.0, 575.0, 629.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -130,7 +130,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 172.001651108264923, 60.799999594688416, 150.0, 47.0 ],
+									"patching_rect" : [ 172.001651108264923, 60.799999594688416, 150.0, 48.0 ],
 									"text" : "force rescale to stay below gen's arbitrary loopcount limit of 100000"
 								}
 
@@ -201,7 +201,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 172.001651108264923, 288.36987179517746, 150.0, 33.0 ],
+									"patching_rect" : [ 172.001651108264923, 288.36987179517746, 150.0, 34.0 ],
 									"text" : "unroll matrix to vector to copy into buffer"
 								}
 
@@ -504,7 +504,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 75.559025526046753, 447.0, 167.081965923309326, 33.0 ],
+									"patching_rect" : [ 75.559025526046753, 447.0, 167.081965923309326, 34.0 ],
 									"text" : "get max of hue histogram weighted by \"colorfullness\" "
 								}
 
@@ -907,9 +907,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1.0, 0.0, 310.0, 24.0 ],
+					"patching_rect" : [ 1.0, 0.0, 310.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 0.0, 310.0, 24.0 ],
+					"presentation_rect" : [ 1.0, 0.0, 310.0, 25.0 ],
 					"text" : "> Attributes: color-full (corpus)"
 				}
 
@@ -935,7 +935,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1218.833333333333258, 389.573277069648725, 71.0, 47.0 ],
+					"patching_rect" : [ 1218.833333333333258, 389.573277069648725, 71.0, 48.0 ],
 					"text" : "Complexity XAvg XVar YAvg YVar"
 				}
 
@@ -1480,9 +1480,9 @@
 								"box" : 								{
 									"id" : "obj-11",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numinlets" : 2,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "float", "" ],
 									"patching_rect" : [ 328.0, 218.000005079826337, 365.0, 22.0 ],
 									"text" : "pipo scale @scale.inmin 0 @scale.outmin 0 1 @scale.outmax 1 0"
 								}
@@ -2256,7 +2256,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 786.442879890402082, 393.573277069648725, 131.0, 33.0 ],
+					"patching_rect" : [ 786.442879890402082, 393.573277069648725, 131.0, 34.0 ],
 					"text" : "horizontal, vertical, Avgflow"
 				}
 
@@ -2268,7 +2268,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 640.125091497103313, 461.573282149475119, 65.0, 60.0 ],
+					"patching_rect" : [ 640.125091497103313, 461.573282149475119, 65.0, 62.0 ],
 					"text" : "average value of the 6 bands"
 				}
 
@@ -2855,7 +2855,7 @@
 				"box" : 				{
 					"id" : "obj-128",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 339.333333333333314, 525.573277069648725, 139.0, 22.0 ],
@@ -2964,16 +2964,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-128", 0 ],
-					"order" : 1,
-					"source" : [ "obj-28", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"order" : 0,
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -2995,7 +2986,24 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
+					"order" : 1,
 					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 1 ],
+					"order" : 0,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 0 ],
+					"order" : 4,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -3089,55 +3097,50 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
-				"name" : "cv.jit.HSflow.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.HSflow.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "cv.jit.features.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.features.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "cv.jit.sum.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.sum.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "pipo.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warmness_analysis_hsv.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
