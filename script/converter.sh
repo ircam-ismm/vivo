@@ -1,14 +1,18 @@
 #! /bin/bash
+echo
+echo "All .MOV files in this directory will be converted to hap codec. Original files will be kept"
+echo
+read -p "Are you sure ? (y/n) " -n 1 -r
+echo
 
-start=1
-echo "Nomenclature must be mainname_number.mov"
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
 
-read -p "What is mainname ? : " varnamefile
-read -p "How many files to convert ? : " number
-
-for (( i=$start; i<=$number; i++ ))
-do
-	ffmpeg -i "$varnamefile"_"$i".mov -c:v hap "$varnamefile"_"$i"_hap.mov
-	echo "done file $i"
-done
-echo "all done"
+	for file in *.MOV
+	do
+		ffmpeg -i "$file" -c:v hap "$file"_hap.MOV
+		echo "done $file"
+	done
+	echo
+	echo "all done bravo"
+fi
