@@ -13,11 +13,14 @@ Vivo is based on vivo.process abstractions. It takes matrix input and outputs a 
 
 ### Warmness analysis 
 Warmness ratio based on HSV analysis. 
+
+This analysis is based on the article : Dimopoulos, M., & Winkler, T. (2014, September). Imagewarmness—A new perceptual feature for images and videos. In 2014 22nd European Signal Processing Conference (EUSIPCO) (pp. 1662-1666). IEEE.
+Not like the article, image quantization is only precalculated once for every image.
+
 * 0. to 1. : cold
 * -1 to 0. : warm
 * above : red saturation
-This analysis is based on the article : Dimopoulos, M., & Winkler, T. (2014, September). Imagewarmness—A new perceptual feature for images and videos. In 2014 22nd European Signal Processing Conference (EUSIPCO) (pp. 1662-1666). IEEE.
-Not like the article, image quantization is only precalculated once for every image.
+
 
 ### Sharpness detection
 Based en Sobel detection, it outputs a sharpness ratio (0. - 1.). The lower the ratio, the more blurred the image.
