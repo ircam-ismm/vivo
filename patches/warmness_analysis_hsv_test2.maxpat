@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 2488.0, 1252.0 ],
+		"rect" : [ 34.0, 84.0, 1213.0, 650.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-57",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1554.0, 871.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-55",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 281.0, 47.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -60,7 +85,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1304.75, 784.0, 144.0, 41.0 ]
+					"patching_rect" : [ 1304.75, 784.0, 144.0, 42.0 ]
 				}
 
 			}
@@ -83,7 +108,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1493.030832529067993, 748.5, 275.309272170066833, 33.0 ],
+					"patching_rect" : [ 1493.030832529067993, 748.5, 275.309272170066833, 34.0 ],
 					"text" : "global warmness = sum of weighted histogram: \nTHETA = sum ( f_n * theta_n)"
 				}
 
@@ -95,7 +120,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1482.25, 679.0, 123.0, 33.0 ],
+					"patching_rect" : [ 1482.25, 679.0, 123.0, 34.0 ],
 					"text" : "weighted histogram:  f_n * theta_n"
 				}
 
@@ -166,7 +191,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1471.5, 783.500000000000114, 117.525772213935852, 33.0 ]
+					"patching_rect" : [ 1471.5, 783.500000000000114, 117.525772213935852, 34.0 ]
 				}
 
 			}
@@ -304,7 +329,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1316.25, 451.0, 80.0, 35.0 ]
+					"patching_rect" : [ 1316.25, 451.0, 80.0, 36.0 ]
 				}
 
 			}
@@ -360,7 +385,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -579,7 +604,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -998,7 +1023,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1172,7 +1197,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1319,7 +1344,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 1009.75, 586.0, 97.0, 35.0 ],
+					"patching_rect" : [ 1009.75, 586.0, 97.0, 36.0 ],
 					"text" : "jit.gen @t warmness"
 				}
 
@@ -1443,7 +1468,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1574,7 +1599,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.0, 698.5, 102.0, 47.0 ],
+					"patching_rect" : [ 461.0, 698.5, 102.0, 48.0 ],
 					"text" : "cold range [-1, 0]\nwarm range [0, 1]\nPER BIN"
 				}
 
@@ -1670,7 +1695,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.75, 591.0, 57.0, 47.0 ],
+					"patching_rect" : [ 189.75, 591.0, 57.0, 48.0 ],
 					"text" : "cold -1\nwarm +1\nPER BIN"
 				}
 
@@ -1682,7 +1707,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.75, 501.0, 153.0, 47.0 ],
+					"patching_rect" : [ 460.75, 501.0, 153.0, 48.0 ],
 					"text" : "Tn(Hn) = { −1 , if 75◦ < Hn < 285◦ +1 , if 0◦ ≤ Hn ≤ 75◦ or 285◦ ≤ Hn ≤ 360◦"
 				}
 
@@ -2474,6 +2499,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
+					"order" : 1,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
+					"order" : 0,
 					"source" : [ "obj-39", 0 ]
 				}
 
@@ -2585,7 +2619,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-6", 0 ]
+					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -2658,8 +2692,8 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "cv.jit.sum.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.sum.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "demovideo.maxpat",
@@ -2674,8 +2708,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "warmness_analysis_hsv.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
