@@ -16,10 +16,9 @@ Warmness ratio based on HSV analysis.
 
 This analysis is based on the article : Dimopoulos, M., & Winkler, T. (2014, September). Imagewarmness—A new perceptual feature for images and videos. In 2014 22nd European Signal Processing Conference (EUSIPCO) (pp. 1662-1666). IEEE.
 Not like the article, image quantization is only precalculated once for every image.
-
 * 0. to 1. : warm
 * -1 to 0. : cold
-* O. : neutral (white images mostly)
+* 0. : neutral (white images mostly)
 
 
 ### Sharpness detection
