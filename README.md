@@ -5,7 +5,7 @@ The vivo browser is based on Mubu CataRT and Cocavs.
 ## Requirement
 ### Max Packages 
 * Mubu
-* (cv.jit) OpticalFlow is based on cv.jithsflow
+* (cv.jit) OpticalFlow is based on cv.jithsflow, cv.jitsum is also used in detail analysis
 * Optional : Catart patches for parameters mapping
 
 ## Analysis 
