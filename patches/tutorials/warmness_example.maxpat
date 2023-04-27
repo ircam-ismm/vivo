@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"showontab" : 1,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
@@ -45,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 201.0, 478.0, 55.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "0 neutral"
 				}
 
@@ -57,7 +57,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 208.5, 418.0, 48.0, 20.0 ],
-					"presentation_linecount" : 3,
 					"text" : "1 warm"
 				}
 
