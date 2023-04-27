@@ -2232,8 +2232,8 @@
 					"id" : "obj-52",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 721.442879890402082, 369.573277069648725, 71.0, 22.0 ],
 					"text" : "optical_flow"
 				}
@@ -2979,7 +2979,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -2988,7 +2988,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"midpoints" : [ 675.942879890402082, 252.0, 1217.052426447470907, 252.0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -2996,7 +2996,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"disabled" : 1,
+					"order" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -3076,7 +3076,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -3084,7 +3084,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -3100,7 +3100,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
-					"order" : 0,
+					"order" : 2,
 					"source" : [ "obj-5", 0 ]
 				}
 
