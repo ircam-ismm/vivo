@@ -40,6 +40,41 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-122",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1484.0, 702.500014999999962, 100.0, 20.0 ],
+					"presentation_linecount" : 10,
+					"text" : "y normalised 0..1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-120",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1429.5, 702.500014999999962, 19.0, 20.0 ],
+					"text" : "x"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1414.0, 730.350005745887756, 74.0, 22.0 ],
+					"text" : "pack 1. 2."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-108",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1261,7 +1296,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1468.0, 663.500014999999962, 50.0, 22.0 ]
+					"patching_rect" : [ 1469.0, 668.500014999999962, 50.0, 22.0 ]
 				}
 
 			}
@@ -1274,7 +1309,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1413.0, 663.500014999999962, 50.0, 22.0 ]
+					"patching_rect" : [ 1414.0, 668.500014999999962, 50.0, 22.0 ]
 				}
 
 			}
@@ -1340,7 +1375,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 1346.0, 542.850020745887718, 71.5, 22.0 ],
+					"patching_rect" : [ 1346.0, 542.850020745887718, 213.5, 22.0 ],
 					"text" : "router 3 5"
 				}
 
@@ -1554,7 +1589,7 @@
 					"patching_rect" : [ 9.0, 996.0, 78.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 67.5, 650.799987999999985, 77.5, 20.0 ],
-					"text" : "Buffer: 6"
+					"text" : "Buffer: 21"
 				}
 
 			}
@@ -1579,7 +1614,7 @@
 					"patching_rect" : [ 131.0, 996.0, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 67.5, 675.799987999999985, 77.5, 20.0 ],
-					"text" : "Index: 12"
+					"text" : "Index: 284"
 				}
 
 			}
@@ -1604,7 +1639,7 @@
 					"patching_rect" : [ 458.0, 996.0, 231.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 151.083331999999984, 650.799987999999985, 419.416668000000016, 20.0 ],
-					"text" : "File: river_3.WAV"
+					"text" : "File: fred enddrones 2 high.wav"
 				}
 
 			}
@@ -1627,10 +1662,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.837608257929446, 996.0, 81.162391742070554, 34.0 ],
+					"patching_rect" : [ 241.837608257929446, 996.0, 81.162391742070554, 33.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 151.083331999999984, 675.799987999999985, 112.583331999999984, 20.0 ],
-					"text" : "Start: 3000.00 ms"
+					"text" : "Start: 71000.00 ms"
 				}
 
 			}
@@ -1724,7 +1759,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.5, 109.0, 79.0, 38.0 ],
+					"patching_rect" : [ 416.5, 109.0, 79.0, 37.0 ],
 					"text" : "switch off pipo analysis when reading .mubu"
 				}
 
@@ -1800,9 +1835,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 533.350005745887756, 92.0, 27.0 ],
+					"patching_rect" : [ 10.0, 533.350005745887756, 92.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 406.65002400000003, 92.0, 27.0 ],
+					"presentation_rect" : [ 10.0, 406.65002400000003, 92.0, 26.0 ],
 					"text" : "synthesis"
 				}
 
@@ -1819,10 +1854,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3.666664, 234.050859987735748, 96.333327999999995, 43.0 ],
+					"patching_rect" : [ 3.666664, 234.050859987735748, 96.333327999999995, 42.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 3.666664, 225.014531075954437, 89.0, 43.0 ],
+					"presentation_rect" : [ 3.666664, 225.014531075954437, 89.0, 42.0 ],
 					"text" : "trigger & selection"
 				}
 
@@ -2305,7 +2340,6 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-5",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -3039,10 +3073,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 472.5, 13.5, 95.0, 38.0 ],
+					"patching_rect" : [ 472.5, 13.5, 95.0, 37.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 472.5, 13.5, 95.0, 38.0 ],
+					"presentation_rect" : [ 472.5, 13.5, 95.0, 37.0 ],
 					"text" : "drop files or folders here"
 				}
 
@@ -4299,7 +4333,7 @@
 					"presentation_rect" : [ 235.5, 164.5, 223.0, 22.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
-					"size" : 7,
+					"size" : 36,
 					"slidercolor" : [ 0.516304, 0.516304, 0.516304, 1.0 ],
 					"spacing" : 1
 				}
@@ -5352,7 +5386,6 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 429.5, 8.5, 99.0, 18.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 2,
 									"presentation_rect" : [ 122.0, 1.0, 84.0, 18.0 ],
 									"text" : "Analysis (corpus)"
 								}
@@ -5449,7 +5482,6 @@
 									"fontname" : "Geneva",
 									"fontsize" : 9.0,
 									"id" : "obj-14",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 6,
 									"numoutlets" : 6,
@@ -6173,7 +6205,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.5, 511.700012000000015, 100.0, 36.0 ],
+					"patching_rect" : [ 472.5, 511.700012000000015, 100.0, 35.0 ],
 					"text" : "0.228346 0.574803"
 				}
 
@@ -6475,15 +6507,15 @@
 					"cursor_circlewidth" : 0.0,
 					"cursor_color" : [ 0.776471, 0.066667, 0.066667, 0.286275 ],
 					"cursor_followmouse" : 0,
-					"cursor_nearest" : 1,
+					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 1985.432625053147376,
+					"cursor_position" : 6317.11181640625,
 					"cursor_shape" : "cross",
 					"cursor_size" : 3,
 					"cursor_sizeunit" : 1,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 1245.423110272288113, 7962.432552129318537 ],
+					"domain_bounds" : [ 295.405986047256761, 7442.335276044625061 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -6586,9 +6618,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 139.5, 83.0, 27.0 ],
+					"patching_rect" : [ 10.0, 139.5, 83.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 137.5, 83.0, 27.0 ],
+					"presentation_rect" : [ 10.0, 137.5, 83.0, 26.0 ],
 					"text" : "analysis"
 				}
 
@@ -6635,9 +6667,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 472.5, 157.5, 85.0, 27.0 ],
+					"patching_rect" : [ 472.5, 157.5, 85.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 472.5, 165.0, 85.0, 27.0 ],
+					"presentation_rect" : [ 472.5, 165.0, 85.0, 26.0 ],
 					"text" : "control"
 				}
 
@@ -6682,9 +6714,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 104.0, 56.0, 27.0 ],
+					"patching_rect" : [ 10.0, 104.0, 56.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 107.0, 56.0, 27.0 ],
+					"presentation_rect" : [ 10.0, 107.0, 56.0, 26.0 ],
 					"text" : "data"
 				}
 
@@ -6741,9 +6773,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 5.0, 416.0, 34.0 ],
+					"patching_rect" : [ 8.0, 5.0, 416.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 5.0, 416.0, 34.0 ],
+					"presentation_rect" : [ 8.0, 5.0, 416.0, 33.0 ],
 					"text" : "CataRT by MuBu — simple example"
 				}
 
@@ -6788,7 +6820,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 10.0, 562.0, 139.0, 121.0 ],
+					"patching_rect" : [ 10.0, 562.0, 139.0, 118.0 ],
 					"saved_object_attributes" : 					{
 						"outputstate" : 1,
 						"resampleaudioinput" : 0
@@ -6848,7 +6880,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.5, 209.999985000000009, 118.0, 36.0 ],
+					"patching_rect" : [ 472.5, 209.999985000000009, 118.0, 35.0 ],
 					"text" : "camu.control.blocks corpus descr"
 				}
 
@@ -7079,6 +7111,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 1 ],
+					"source" : [ "obj-124", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-134", 0 ],
 					"hidden" : 1,
 					"midpoints" : [ 841.0, 933.0, 722.5, 933.0, 722.5, 837.0, 757.0, 837.0 ],
@@ -7259,6 +7305,13 @@
 					"hidden" : 1,
 					"order" : 1,
 					"source" : [ "obj-225", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
@@ -7984,158 +8037,166 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "OSC_receive.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/src/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "blocks.jit.matrix.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "blocks.pad.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "camu.cont.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.control.blocks.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.control.mpe.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.control.sensel.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.imubu.control.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.menu.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.process.descr-chop.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.filter.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.select.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.target.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.triggermode.maxpat",
-				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
-				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
+				"bootpath" : "~/src/catart-mubu/patchers/lib",
+				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "imubu.mxe64",
-				"type" : "mx64"
+				"name" : "imubu.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mc.mubu.concat~.mxe64",
-				"type" : "mx64"
+				"name" : "mc.mubu.concat~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.knn.mxe64",
-				"type" : "mx64"
+				"name" : "mubu.knn.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.multitrack.play.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../Max 8/Packages/MuBu For Max/patchers",
+				"bootpath" : "~/src/mubu-and-co/maxmubu/patches/patchers",
+				"patcherrelativepath" : "../../mubu-and-co/maxmubu/patches/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mubu.multitrack.record.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
-				"patcherrelativepath" : "../../Max 8/Packages/MuBu For Max/patchers",
+				"bootpath" : "~/src/mubu-and-co/maxmubu/patches/patchers",
+				"patcherrelativepath" : "../../mubu-and-co/maxmubu/patches/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.mxe64",
-				"type" : "mx64"
+				"name" : "mubu.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.play.mxe64",
-				"type" : "mx64"
+				"name" : "mubu.play.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.process.mxe64",
-				"type" : "mx64"
+				"name" : "mubu.process.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "mubu.track.mxe64",
-				"type" : "mx64"
+				"name" : "mubu.track.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "pipo.mxe64",
-				"type" : "mx64"
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "scaler.json",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/src/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaler.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/src/vivo/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sensel.mxe64",
-				"type" : "mx64"
+				"name" : "sensel.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "thru.maxpat",
