@@ -12,6 +12,7 @@ The vivo browser is based on Mubu CataRT and Cocavs.
 You can start by playing with the extra/overview_vivo.process and have a look at how the video descriptors work. 
 Every descriptor is an abstraction you can use anywhere.
 They are all bundled in vivo.process.details+mouvement
+### Examples
 An example of how one can use it off-line is the vivo-video-browser, analysing images frame by frame.
 An example of real-time use is the video_player. You can send real-time video analysis data and map it to whatever you want (catart_parameters_mapping is an OSC example of it)
 
