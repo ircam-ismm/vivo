@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, -995.0, 1610.0, 929.0 ],
+		"rect" : [ 34.0, 84.0, 1213.0, 650.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -738,7 +738,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.955580744478141, 6.900024000000002, 73.0, 20.0 ],
+					"patching_rect" : [ 504.955580744478141, 7.400024000000002, 73.0, 20.0 ],
 					"text" : "fft band size"
 				}
 
@@ -752,7 +752,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 454.077783988581643, -0.5, 30.0, 30.0 ]
+					"patching_rect" : [ 468.077783988581643, 0.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -2302,7 +2302,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 41.0, 111.0, 1311.0, 637.0 ],
+						"rect" : [ 34.0, 84.0, 911.0, 650.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2330,7 +2330,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -2979,7 +2978,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -2988,7 +2987,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"midpoints" : [ 675.942879890402082, 252.0, 1217.052426447470907, 252.0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -2996,7 +2995,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
+					"order" : 2,
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -3177,7 +3176,7 @@
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/Documents/vivo/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3188,7 +3187,7 @@
 			}
 , 			{
 				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/Documents/vivo/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3199,14 +3198,14 @@
 			}
 , 			{
 				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/Documents/vivo/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warmness_analysis_hsv_2.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
+				"bootpath" : "~/Documents/vivo/lib",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
