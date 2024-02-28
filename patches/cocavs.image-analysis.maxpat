@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 878.0, 300.0, 1682.0, 1126.0 ],
+		"rect" : [ 173.0, 45.0, 1183.0, 1126.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 9.0,
@@ -509,7 +509,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1299,7 +1299,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 663.0, -25.5, 59.0, 19.0 ],
-					"text" : "loadmess 2"
+					"text" : "loadmess 3"
 				}
 
 			}
@@ -1436,7 +1436,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"id" : "obj-37",
-					"items" : [ "analysis", "mode:", ",", "color-full", ",", "color+keypoints" ],
+					"items" : [ "analysis", "mode:", ",", "color-full", ",", "color+keypoints", ",", "color+texture" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1611,7 +1611,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "cocavs.process.color+keypoints.maxpat",
+					"name" : "cocavs.process.color+texture.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1937,6 +1937,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-75", 0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-50", 0 ]
 				}
@@ -1973,15 +1980,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 1,
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
-					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
