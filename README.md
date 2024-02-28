@@ -40,3 +40,23 @@ This allows you to analyse de detail level of your image.
 ### Optical Flow
 Optical Flow is based on cv.jithsflow. It outputs horizontal mean mouvement, vertical mean mouvement, and overall global mouvment.
 This patch mostly works for live video input with humain movment (live performance).
+
+
+
+
+
+
+combine AV descr
+video segmentation: 2nd seg/descr mean track
+needs polymovie video segment player instead of image rendering
+
+
+todo: A driven video cut up
+- AV synchro?
+
+schene/keyframe detection?
+- metadata?
+- algorithms
+
+
+audio onset to video cutup
