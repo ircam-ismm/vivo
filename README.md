@@ -8,6 +8,14 @@ The vivo browser is based on Mubu CataRT and Cocavs.
 * (cv.jit) OpticalFlow is based on cv.jithsflow, cv.jitsum is also used in detail analysis
 * Optional : Catart patches for parameters mapping
 
+## Starting Point
+You can start by playing with the extra/overview_vivo.process and have a look at how the video descriptors work. 
+Every descriptor is an abstraction you can use anywhere.
+They are all bundled in vivo.process.details+mouvement
+### Examples
+An example of how one can use it off-line is the vivo-video-browser, analysing images frame by frame.
+An example of real-time use is the video_player. You can send real-time video analysis data and map it to whatever you want (catart_parameters_mapping is an OSC example of it)
+
 ## Analysis 
 Vivo is based on vivo.process abstractions. It takes matrix input and outputs a list of values as following 
 
@@ -38,25 +46,24 @@ This allows you to analyse de detail level of your image.
 
 
 ### Optical Flow
-Optical Flow is based on cv.jithsflow. It outputs horizontal mean mouvement, vertical mean mouvement, and overall global mouvment.
-This patch mostly works for live video input with humain movment (live performance).
+Optical Flow is based on cv.jithsflow. It outputs horizontal mean movement, vertical mean movement, and overall global movement.
+
+This patch mostly works for live video input with human movement (live performance).
+
+Enjoy
 
 
 
-
-
-
+## Notes and Ideas
 combine AV descr
 video segmentation: 2nd seg/descr mean track
 needs polymovie video segment player instead of image rendering
 
-
-todo: A driven video cut up
+todo: Audio-driven video cut up
 - AV synchro?
 
 schene/keyframe detection?
 - metadata?
 - algorithms
-
 
 audio onset to video cutup

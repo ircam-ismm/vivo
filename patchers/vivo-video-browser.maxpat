@@ -192,7 +192,11 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 40.0, 380.0, 22.0 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"text" : "mouse exit 68.390614 28.312678"
+=======
+									"text" : "mouse exit 109.126234 259.632041"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 								}
 
 							}
@@ -1212,7 +1216,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.059389746752402, 371.700012000000015, 100.0, 35.0 ],
+					"patching_rect" : [ 192.059389746752402, 371.700012000000015, 100.0, 36.0 ],
 					"text" : "loadmess clearall"
 				}
 
@@ -1236,7 +1240,11 @@
 						}
 ,
 						"classnamespace" : "box",
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 						"rect" : [ 433.0, 119.0, 959.0, 645.0 ],
+=======
+						"rect" : [ 280.0, 117.0, 959.0, 645.0 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1498,7 +1506,11 @@
 										}
 ,
 										"classnamespace" : "box",
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 										"rect" : [ 468.0, 79.0, 938.0, 621.0 ],
+=======
+										"rect" : [ 301.0, 84.0, 938.0, 621.0 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1567,8 +1579,13 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 													"patching_rect" : [ 136.0, 403.0, 100.0, 62.0 ],
 													"text" : "play $1, getdim, getfps, getframecount, getmilliseconds"
+=======
+													"patching_rect" : [ 136.0, 403.0, 100.0, 77.0 ],
+													"text" : "play $1, getdim, getfps, getframecount, getduration, getmilliseconds"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 												}
 
 											}
@@ -1628,7 +1645,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 290.5, 432.5, 56.0, 47.0 ],
+													"patching_rect" : [ 290.5, 432.5, 56.0, 48.0 ],
 													"text" : "current import time"
 												}
 
@@ -1652,7 +1669,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 407.875, 432.5, 57.0, 47.0 ],
+													"patching_rect" : [ 407.875, 432.5, 57.0, 48.0 ],
 													"text" : "current import index"
 												}
 
@@ -1736,7 +1753,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 485.0, 432.5, 66.0, 47.0 ],
+													"patching_rect" : [ 485.0, 432.5, 66.0, 48.0 ],
 													"text" : "#images to be imported"
 												}
 
@@ -2269,7 +2286,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 49.627790378913971, 506.434783458709717, 95.0, 47.0 ],
+									"patching_rect" : [ 49.627790378913971, 506.434783458709717, 95.0, 48.0 ],
 									"text" : "switch rendering (1) and analysis (2)"
 								}
 
@@ -2394,7 +2411,11 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-95",
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"items" : [ "dozer.mov", ",", "blading.mov" ],
+=======
+									"items" : "artificial_1_hap.mov",
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2411,7 +2432,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "jit_matrix", "", "" ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"patching_rect" : [ 148.0, 261.0, 169.0, 22.0 ],
+=======
+									"patching_rect" : [ 148.0, 261.0, 156.0, 22.0 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 									"text" : "jit.polymovie cocavs @vol 0"
 								}
 
@@ -2448,7 +2473,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 148.0, 120.0, 90.0, 35.0 ],
+									"patching_rect" : [ 148.0, 120.0, 90.0, 36.0 ],
 									"text" : "frame_true $1, bang"
 								}
 
@@ -2589,7 +2614,11 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-76", 1 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"midpoints" : [ 232.5, 574.0, 793.0, 574.0, 793.0, 187.0, 762.5, 187.0 ],
+=======
+									"midpoints" : [ 226.0, 541.0, 793.0, 541.0, 793.0, 187.0, 762.5, 187.0 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 									"order" : 0,
 									"source" : [ "obj-10", 1 ]
 								}
@@ -3123,7 +3152,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.416678684371959, 77.0, 229.0, 127.0 ],
+					"patching_rect" : [ 322.416678684371959, 77.0, 653.0, 131.0 ],
 					"text" : "Korg nanoKontrol startup in CC mode!!!!!:\n\nSet Marker + \nCycle\tCC mode\nREW\tCubase\nFF\tDigital Performer\nSTOP\tAbleton Live\nPLAY\tProtools\nREC\tSonar"
 				}
 
@@ -3160,7 +3189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1243.0, 676.0, 171.0, 35.0 ],
+					"patching_rect" : [ 1243.0, 676.0, 171.0, 36.0 ],
 					"text" : "/cocavs/target 0.555247 0.925476"
 				}
 
@@ -3609,8 +3638,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"patching_rect" : [ 1715.0, 829.276366999999937, 82.0, 35.0 ],
 					"text" : "1 2 0.14585 0.591614 0."
+=======
+					"patching_rect" : [ 1715.0, 829.276366999999937, 82.0, 36.0 ],
+					"text" : "2 2 0.451737 0.49826 0."
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				}
 
 			}
@@ -3860,7 +3894,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 974.5, 1885.07389869025792, 400.0, 49.0 ],
+					"patching_rect" : [ 974.5, 1885.07389869025792, 400.0, 50.0 ],
 					"text" : "addtrack descr @matrixcols 10 @matrixcolnames Duration FrequencyMean EnergyMean PeriodicityMean AC1Mean LoudnessMean CentroidMean SpreadMean SkewnessMean KurtosisMean"
 				}
 
@@ -3895,7 +3929,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"patching_rect" : [ 1430.5, 795.364536821842194, 190.0, 33.0 ],
+=======
+					"patching_rect" : [ 1430.5, 795.364536821842194, 190.0, 34.0 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 					"text" : "voiceid marker buffer xdescrnorm ydescrnorm..."
 				}
 
@@ -4024,7 +4062,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1122.20000022649765, 1534.514531075954437, 150.0, 33.0 ],
+					"patching_rect" : [ 1122.20000022649765, 1534.514531075954437, 150.0, 34.0 ],
 					"text" : "record what's happening:\nin/outputs"
 				}
 
@@ -4161,7 +4199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 1105.70000022649765, 1572.0, 164.0, 35.0 ],
+					"patching_rect" : [ 1105.70000022649765, 1572.0, 164.0, 36.0 ],
 					"text" : "mubu.multitrack.record trace 500 10s"
 				}
 
@@ -4775,9 +4813,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 144.335541919914277, 1191.000000715255737, 80.0, 35.0 ],
+					"patching_rect" : [ 144.335541919914277, 1191.000000715255737, 80.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.0, 462.046709924087395, 80.0, 35.0 ]
+					"presentation_rect" : [ 104.0, 462.046709924087395, 80.0, 36.0 ]
 				}
 
 			}
@@ -5505,7 +5543,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.084320187568665, 889.514531075954437, 167.0, 47.0 ],
+					"patching_rect" : [ 645.084320187568665, 889.514531075954437, 167.0, 48.0 ],
 					"text" : "when MIDI-mapped, defer to low-priority thread to avoid deadlock with jitter"
 				}
 
@@ -5540,7 +5578,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 378.0, 259.999984999999981, 56.0, 33.0 ],
+					"patching_rect" : [ 378.0, 259.999984999999981, 56.0, 34.0 ],
 					"text" : "sensel osc in"
 				}
 
@@ -6286,7 +6324,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 602.084320187568665, 732.799987999999985, 106.0, 33.0 ],
+					"patching_rect" : [ 602.084320187568665, 732.799987999999985, 106.0, 34.0 ],
 					"text" : "just for braindead Max midi mapping"
 				}
 
@@ -6373,8 +6411,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.415679812431335, 2111.5, 89.0, 76.0 ],
-					"text" : ";\rx-menu $2;\ry-menu $3;\rcolor-menu $4;\rsize-menu $5"
+					"patching_rect" : [ 65.415679812431335, 2111.5, 89.0, 77.0 ],
+					"text" : ";\r\nx-menu $2;\r\ny-menu $3;\r\ncolor-menu $4;\r\nsize-menu $5"
 				}
 
 			}
@@ -6663,7 +6701,11 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 235.5, 356.266369462013245, 50.0, 22.0 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"text" : "93 2"
+=======
+									"text" : "382 1"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 								}
 
 							}
@@ -7229,8 +7271,13 @@
 					"patching_rect" : [ 21.0, 342.700012000000015, 447.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 33.0 ],
 					"text" : "Analysis done: loaded 2214.60 MB of image data in 267 patches in 2 buffers."
+=======
+					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 34.0 ],
+					"text" : "Analysis done: loaded 5125.90 MB of image data in 618 patches in 1 buffers."
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				}
 
 			}
@@ -7266,8 +7313,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.166654109954834, 5.0, 130.0, 35.0 ],
-					"text" : ";\rmax clearmaxwindow"
+					"patching_rect" : [ 439.166654109954834, 5.0, 130.0, 36.0 ],
+					"text" : ";\r\nmax clearmaxwindow"
 				}
 
 			}
@@ -7741,7 +7788,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 108.190609879564875, 941.514531075954437, 45.0, 33.0 ],
+					"patching_rect" : [ 108.190609879564875, 941.514531075954437, 45.0, 34.0 ],
 					"text" : "forced synth"
 				}
 
@@ -7916,8 +7963,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"patching_rect" : [ 1024.0, 805.276366999999937, 70.0, 35.0 ],
 					"text" : "1.012601 0.032493"
+=======
+					"patching_rect" : [ 1024.0, 805.276366999999937, 70.0, 36.0 ],
+					"text" : "0.722382 0.257276"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				}
 
 			}
@@ -8226,7 +8278,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 322.416678684371959, 631.849609999999984, 95.0, 47.0 ],
+					"patching_rect" : [ 322.416678684371959, 631.849609999999984, 95.0, 48.0 ],
 					"text" : "keep in sync after mode change"
 				}
 
@@ -10412,7 +10464,11 @@
 					"patching_rect" : [ 144.0, 1681.164921075954226, 75.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 99.916663999999997, 605.799987999999985, 72.996299999999962, 20.0 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"text" : "Index: 93"
+=======
+					"text" : "Index: 389"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				}
 
 			}
@@ -10461,7 +10517,11 @@
 					"patching_rect" : [ 254.837608257929446, 1681.164921075954226, 98.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 630.799987999999985, 162.91296399999996, 20.0 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"text" : "Start: 5738 ms"
+=======
+					"text" : "Start: 15925 ms"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				}
 
 			}
@@ -10900,7 +10960,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-58",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -10944,7 +11004,11 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 779.75, 110.999999999999972, 39.0, 22.0 ],
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 									"text" : "107 2"
+=======
+									"text" : "384 1"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 								}
 
 							}
@@ -11075,7 +11139,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-36",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -11280,7 +11344,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-10",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -11432,6 +11496,7 @@
 									"fontname" : "Geneva",
 									"fontsize" : 10.0,
 									"id" : "obj-5",
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
@@ -12042,7 +12107,7 @@
 					"patching_rect" : [ 123.25, 529.073898690258034, 215.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 36.5, 252.514531075954437, 115.0, 33.0 ],
+					"presentation_rect" : [ 36.5, 252.514531075954437, 115.0, 34.0 ],
 					"text" : "click mode: select only on mouse click"
 				}
 
@@ -15172,7 +15237,7 @@
 					"patching_rect" : [ 46.726053746752399, 288.900023999999974, 181.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 184.014531075954437, 121.0, 35.0 ],
+					"presentation_rect" : [ 10.0, 184.014531075954437, 121.0, 36.0 ],
 					"text" : "vivo.analysis imcorpus imdescr",
 					"varname" : "corpus-analysis"
 				}
@@ -15390,12 +15455,21 @@
 					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"cursor_position" : 68.390613518336266,
 					"cursor_shape" : "cross",
+=======
+					"cursor_position" : 109.126233947530139,
+					"cursor_shape" : "bar",
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 					"cursor_size" : 1,
 					"cursor_sizeunit" : 1,
 					"cursor_visible" : 1,
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 					"domain_bounds" : [ 68.390613518336266, 229.148073616674395 ],
+=======
+					"domain_bounds" : [ 55.049614686074754, 147.261190883354175 ],
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -15583,9 +15657,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 8.0, 5.0, 417.0, 33.0 ],
+					"patching_rect" : [ 8.0, 5.0, 417.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 5.0, 304.0, 33.0 ],
+					"presentation_rect" : [ 8.0, 5.0, 304.0, 34.0 ],
 					"text" : "VIVO Video Browser"
 				}
 
@@ -15601,7 +15675,7 @@
 					"patching_rect" : [ 8.0, 34.0, 430.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 8.0, 34.0, 260.0, 47.0 ],
+					"presentation_rect" : [ 8.0, 34.0, 260.0, 48.0 ],
 					"text" : "corpus-based concatenative audio–visual synthesis"
 				}
 
@@ -15653,7 +15727,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.240740895271301, 1530.424180180682924, 117.518518209457397, 35.0 ],
+					"patching_rect" : [ 452.240740895271301, 1530.424180180682924, 117.518518209457397, 36.0 ],
 					"text" : "getinfo FileName, getinfo FilePath"
 				}
 
@@ -17757,68 +17831,69 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "camu.cont.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.imubu.control.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.menu.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.filter.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.random.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.select.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.target.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "camu.triggermode.maxpat",
-				"bootpath" : "~/src/catart-mubu/patchers/lib",
-				"patcherrelativepath" : "../../catart-mubu/patchers/lib",
+				"bootpath" : "~/Documents/Max externals/catart-mubu-master/patches/lib",
+				"patcherrelativepath" : "../../Max externals/catart-mubu-master/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cputime-message.maxpat",
-				"bootpath" : "~/src/vivo/patches",
+				"bootpath" : "~/Documents/vivo/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 				"name" : "cv.jit.features.mxo",
 				"type" : "iLaX"
 			}
@@ -17833,12 +17908,38 @@
 , 			{
 				"name" : "ftm.object.mxo",
 				"type" : "iLaX"
+=======
+				"name" : "cv.jit.HSflow.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "imubu.mxo",
-				"type" : "iLaX"
+				"name" : "cv.jit.features.mxe64",
+				"type" : "mx64"
 			}
 , 			{
+				"name" : "cv.jit.sum.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "fft_mean_bands.maxpat",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
+			}
+, 			{
+				"name" : "imubu.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
+=======
+				"name" : "jit.pass.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				"name" : "jit.polymovie.maxpat",
 				"bootpath" : "C74:/packages/Jitter Tools/patchers/abstractions",
 				"type" : "JSON",
@@ -17851,37 +17952,63 @@
 				"implicit" : 1
 			}
 , 			{
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 				"name" : "mnm.hist.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "mubu.knn.mxo",
 				"type" : "iLaX"
+=======
+				"name" : "mubu.knn.mxe64",
+				"type" : "mx64"
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 			}
 , 			{
-				"name" : "mubu.model.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.model.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "mubu.multitrack.record.maxpat",
-				"bootpath" : "~/src/mubu-and-co/maxmubu/patches/patchers",
-				"patcherrelativepath" : "../../mubu-and-co/maxmubu/patches/patchers",
+				"bootpath" : "~/Documents/Max 8/Packages/MuBu For Max/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/MuBu For Max/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mubu.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "mubu.track.mxo",
-				"type" : "iLaX"
+				"name" : "mubu.track.mxe64",
+				"type" : "mx64"
 			}
 , 			{
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+=======
+				"name" : "optical_flow.maxpat",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pipo.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "sharpness_detection.maxpat",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
@@ -17889,15 +18016,28 @@
 			}
 , 			{
 				"name" : "vivo.analysis.maxpat",
-				"bootpath" : "~/src/vivo/patches",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+<<<<<<< HEAD:patches/vivo-video-browser.maxpat
 				"name" : "vivo.process.color+keypoints.maxpat",
 				"bootpath" : "~/src/vivo/patches",
 				"patcherrelativepath" : ".",
+=======
+				"name" : "vivo.process.details+mouvement.maxpat",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "warmness_analysis_hsv_2.maxpat",
+				"bootpath" : "~/Documents/vivo/lib",
+				"patcherrelativepath" : "../lib",
+>>>>>>> eef873b65a97231270cf8a2d34d3e70a8639210a:patchers/vivo-video-browser.maxpat
 				"type" : "JSON",
 				"implicit" : 1
 			}
