@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1357.0, 550.0, 1203.0, 720.0 ],
+		"rect" : [ 682.0, 1496.0, 1203.0, 720.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -305,7 +305,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2127.0, 1519.0, 623.0, 765.0 ],
+						"rect" : [ 1781.0, 1519.0, 623.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -333,7 +333,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -415,7 +414,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 182.000000000000057, 104.0, 417.999999999999943, 22.0 ],
-									"text" : "/Users/schwarz/src/cocavs/corpora/biolum.jxf"
+									"text" : "/Users/schwarz/src/cocavs/corpora/elizabeth.jxf"
 								}
 
 							}
@@ -427,7 +426,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 182.000000000000057, 76.0, 417.999999999999943, 22.0 ],
-									"text" : "/Users/schwarz/src/cocavs/corpora/biolum.mubu"
+									"text" : "/Users/schwarz/src/cocavs/corpora/elizabeth.mubu"
 								}
 
 							}
@@ -1956,7 +1955,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1032.0, 1519.0, 1372.0, 709.0 ],
+						"rect" : [ 513.0, 1519.0, 1372.0, 709.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1993,7 +1992,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1119.125, 360.0, 138.0, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "bloody matrixset clears when augmenting count, so we need to estimate #splits"
 								}
 
@@ -2006,7 +2004,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 1084.125, 388.0, 30.0, 22.0 ],
-									"text" : "* 15"
+									"text" : "* 17"
 								}
 
 							}
@@ -2057,7 +2055,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 59.0, 104.0, 783.0, 656.0 ],
+										"rect" : [ 805.0, 705.0, 783.0, 656.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4025,7 +4023,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 2235.0, 1519.0, 924.0, 510.0 ],
+										"rect" : [ 1480.0, 1519.0, 924.0, 510.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4053,7 +4051,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-11",
