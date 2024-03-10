@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 939.0, 451.0, 1181.0, 844.0 ],
+		"rect" : [ 826.0, 304.0, 1619.0, 1103.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 9.0,
@@ -39,6 +39,77 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 309.300004746416107, 1259.333370864391327, 179.366672013303742, 27.0 ],
+					"text" : "hack: give same column names to order tracks so that camu.menu works"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-118",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 490.800005193450886, 1298.000003218650818, 147.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"verbose" : 1
+					}
+,
+					"text" : "mubu.track #1 imordernorm",
+					"varname" : "mubu-chop[6]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-117",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 337.46667652914806, 1298.000003218650818, 147.0, 19.0 ],
+					"saved_object_attributes" : 					{
+						"verbose" : 1
+					}
+,
+					"text" : "mubu.track #1 imorderdescr",
+					"varname" : "mubu-chop[5]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-114",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 490.800005193450886, 1274.000002503395081, 107.0, 19.0 ],
+					"text" : "prepend matrixcolnames"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 490.800005193450886, 1253.000002503395081, 207.0, 19.0 ],
+					"text" : "mubu.track.get #1 #2 matrixcolnames",
+					"varname" : "mubu-chop[4]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-104",
 					"maxclass" : "toggle",
@@ -1172,7 +1243,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 180.800005193450886, 1238.000001132488251, 50.0, 19.0 ]
+					"patching_rect" : [ 180.800005193450886, 1211.000001132488251, 50.0, 19.0 ]
 				}
 
 			}
@@ -1182,7 +1253,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 537.000002193450882, 1250.500001132488251, 70.0, 19.0 ],
+					"patching_rect" : [ 537.000002193450882, 1211.000001132488251, 70.0, 19.0 ],
 					"text" : "print ordernorm"
 				}
 
@@ -1195,7 +1266,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 490.800005193450886, 1250.500001132488251, 24.0, 24.0 ]
+					"patching_rect" : [ 490.800005193450886, 1211.000001132488251, 24.0, 24.0 ]
 				}
 
 			}
@@ -1206,7 +1277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
-					"patching_rect" : [ 180.800005193450886, 1204.000001132488251, 437.0, 19.0 ],
+					"patching_rect" : [ 180.800005193450886, 1183.000001132488251, 437.0, 19.0 ],
 					"text" : "mubu.model #1 imorderdescr normalize @name imordernorm @priority sync @progressoutput input"
 				}
 
@@ -1220,7 +1291,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 180.800005193450886, 1147.000001132488251, 50.0, 19.0 ]
+					"patching_rect" : [ 180.800005193450886, 1143.000001132488251, 50.0, 19.0 ]
 				}
 
 			}
@@ -1230,7 +1301,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 537.000002193450882, 1159.500001132488251, 68.0, 19.0 ],
+					"patching_rect" : [ 537.000002193450882, 1143.000001132488251, 68.0, 19.0 ],
 					"text" : "print order"
 				}
 
@@ -1243,7 +1314,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 490.800005193450886, 1159.500001132488251, 24.0, 24.0 ]
+					"patching_rect" : [ 490.800005193450886, 1143.000001132488251, 24.0, 24.0 ]
 				}
 
 			}
@@ -1352,7 +1423,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "int", "" ],
 					"patching_rect" : [ 273.800005193450886, 1028.000001132488251, 415.0, 19.0 ],
-					"text" : "mubu.model #1 imdescr normalize @name imdescrnorm @priority sync @progressoutput input"
+					"text" : "mubu.model #1 #2 normalize @name imdescrnorm @priority sync @progressoutput input"
 				}
 
 			}
@@ -2726,6 +2797,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-117", 0 ],
+					"order" : 1,
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-118", 0 ],
+					"order" : 0,
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"order" : 1,
 					"source" : [ "obj-115", 0 ]
@@ -3044,6 +3131,13 @@
 					"destination" : [ "obj-62", 0 ],
 					"order" : 0,
 					"source" : [ "obj-41", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-97", 0 ],
+					"source" : [ "obj-47", 0 ]
 				}
 
 			}
@@ -3435,6 +3529,13 @@
 					"destination" : [ "obj-92", 0 ],
 					"order" : 1,
 					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-114", 0 ],
+					"source" : [ "obj-97", 0 ]
 				}
 
 			}
