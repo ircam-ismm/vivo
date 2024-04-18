@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 4,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 175.0, -880.0, 1176.0, 717.0 ],
+		"rect" : [ 175.0, 79.0, 1202.0, 724.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,13 +51,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 4,
+							"revision" : 6,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1176.0, 691.0 ],
+						"rect" : [ 175.0, 105.0, 1202.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,13 +88,322 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"bubble" : 1,
-									"id" : "obj-43",
+									"id" : "obj-21",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 279.0, 109.0, 211.0, 24.0 ],
-									"presentation_linecount" : 6,
+									"patching_rect" : [ 7.0, 7.669794917106628, 179.0, 20.0 ],
+									"presentation_linecount" : 4,
+									"text" : "generate artifical texture images"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 432.740351676940918, 80.481116592884064, 209.0, 33.0 ],
+									"presentation_linecount" : 2,
+									"text" : "for each matrix input: \noutputs list of image descriptor values"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 695.80189973115921, 87.0, 359.254720270633698, 20.0 ],
+									"presentation_linecount" : 7,
+									"text" : "at init or clearall message: outputs list of image descriptor names"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"linecount" : 4,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 695.80189973115921, 109.0, 376.34907454252243, 62.0 ],
+									"text" : "Warmness Sharpness AvgDetail LoFreqDetail MidFreqDetail HiFreqDetail HorizFlow VerticFlow AvgFlow HueAvg HueVar SaturationAvg SaturationVar LuminanceAvg LuminanceVar Color Complexity XAvg XVar YAvg YVar"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "dictionary" ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 5,
+											"revision" : 6,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 480.0, 880.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"visible" : 1,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-11",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 117.0, 227.296875, 72.0, 22.0 ],
+													"text" : "prepend set"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-10",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 117.0, 189.835336089134216, 47.0, 22.0 ],
+													"text" : "zl iter 2"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-8",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "bang", "bang", "", "" ],
+													"patching_rect" : [ 50.0, 109.143028974533081, 100.0, 22.0 ],
+													"text" : "t b b l l"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-7",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 117.0, 159.296875, 43.0, 22.0 ],
+													"text" : "zl lace"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-6",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 4,
+													"outlettype" : [ "dictionary", "", "", "" ],
+													"patching_rect" : [ 117.0, 297.989182114601135, 81.0, 22.0 ],
+													"saved_object_attributes" : 													{
+														"embed" : 0,
+														"parameter_enable" : 0,
+														"parameter_mappable" : 0
+													}
+,
+													"text" : "dict vivodescr"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 277.0, 109.296875, 43.0, 22.0 ],
+													"text" : "zl reg"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-13",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-14",
+													"index" : 2,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 301.0, 40.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-15",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 117.0, 336.98919699999999, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-11", 0 ],
+													"source" : [ "obj-10", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-11", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-8", 0 ],
+													"source" : [ "obj-13", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 1 ],
+													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"source" : [ "obj-6", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-10", 0 ],
+													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 0 ],
+													"source" : [ "obj-8", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-6", 0 ],
+													"source" : [ "obj-8", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 1 ],
+													"source" : [ "obj-8", 2 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 419.264170110225677, 131.157529711723328, 270.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p todict"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "dict.view",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 419.264170110225677, 159.132060647010803, 187.476191818714142, 422.884656488895416 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-43",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 279.0, 139.0, 96.849051296710968, 51.0 ],
 									"text" : "Play with parameters (it's an order)"
 								}
 
@@ -105,7 +414,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 425.0, 504.5, 60.0, 20.0 ],
+									"patching_rect" : [ 768.30189973115921, 360.405645728111267, 60.0, 20.0 ],
 									"text" : "AvgDetail"
 								}
 
@@ -116,7 +425,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 352.5, 504.5, 64.0, 20.0 ],
+									"patching_rect" : [ 695.80189973115921, 360.405645728111267, 64.0, 20.0 ],
 									"text" : "sharpness"
 								}
 
@@ -127,7 +436,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 284.0, 504.5, 63.0, 20.0 ],
+									"patching_rect" : [ 627.30189973115921, 360.405645728111267, 63.0, 20.0 ],
 									"text" : "warmness"
 								}
 
@@ -140,7 +449,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 284.0, 352.0, 201.0, 151.0 ],
+									"patching_rect" : [ 627.30189973115921, 204.157529711723328, 201.0, 151.0 ],
 									"setminmax" : [ 0.0, 1.0 ],
 									"size" : 3
 								}
@@ -153,20 +462,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 284.0, 324.0, 55.0, 22.0 ],
-									"text" : "$2 $4 $6"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-15",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 25.0, 348.0, 47.0, 22.0 ],
-									"text" : "clearall"
+									"patching_rect" : [ 627.30189973115921, 159.132060647010803, 55.0, 22.0 ],
+									"text" : "$1 $2 $3"
 								}
 
 							}
@@ -176,7 +473,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 192.0, 382.5, 74.0, 20.0 ],
+									"patching_rect" : [ 432.740351676940918, 27.481116592884064, 74.0, 20.0 ],
 									"text" : "matrix input "
 								}
 
@@ -198,7 +495,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 7.0, 255.0, 177.0, 82.0 ],
+									"patching_rect" : [ 98.0, 283.113207459449768, 177.0, 82.0 ],
 									"prototypename" : "pixl",
 									"varname" : "texture2matrix",
 									"viewvisibility" : 1
@@ -221,7 +518,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 494.0, 281.0, 296.0, 255.0 ],
+									"patching_rect" : [ 7.0, 382.584909081459045, 268.0, 187.07546854019165 ],
 									"prototypename" : "pixl",
 									"varname" : "viewr[1]",
 									"viewvisibility" : 1
@@ -230,37 +527,14 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"linecount" : 10,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 7.0, 463.0, 247.0, 146.0 ],
-									"text" : "Warmness 0.027082 Sharpness 0.007488 AvgDetail 0.010171 LoFreqDetail 0.034357 MidFreqDetail 0.006082 HiFreqDetail 0.002727 HorizFlow 0. VerticFlow 0. AvgFlow 0. HueAvg 28.614469 HueVar 1.035819 SaturationAvg 198.961125 SaturationVar 1.383417 LuminanceAvg 242.446797 LuminanceVar 0. Color 255. Complexity 921 XAvg 0.56289 XVar 0.623269 YAvg 0.409479 YVar 0.649114"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 7.0, 423.0, 43.0, 22.0 ],
-									"text" : "zl lace"
-								}
-
-							}
-, 							{
-								"box" : 								{
+									"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+									"fontsize" : 18.0,
 									"id" : "obj-1",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 7.0, 382.5, 183.0, 22.0 ],
+									"patching_rect" : [ 419.264170110225677, 49.481116592884064, 270.0, 29.0 ],
 									"text" : "vivo.process.details+mouvement"
 								}
 
@@ -282,7 +556,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 7.0, 4.0, 268.0, 234.0 ],
+									"patching_rect" : [ 7.0, 34.0, 268.0, 234.0 ],
 									"prototypename" : "pixl",
 									"varname" : "bfgener8r",
 									"viewvisibility" : 1
@@ -292,47 +566,49 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
+									"destination" : [ "obj-16", 1 ],
+									"order" : 1,
 									"source" : [ "obj-1", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 1 ],
+									"destination" : [ "obj-16", 0 ],
+									"order" : 1,
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-15", 0 ]
+									"destination" : [ "obj-17", 1 ],
+									"midpoints" : [ 679.764170110225677, 82.863199323415756, 1062.650974273681641, 82.863199323415756 ],
+									"order" : 0,
+									"source" : [ "obj-1", 1 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
-									"midpoints" : [ 16.5, 447.0, 276.0, 447.0, 276.0, 402.0, 276.0, 402.0, 276.0, 321.0, 293.5, 321.0 ],
+									"midpoints" : [ 428.764170110225677, 122.243852287530899, 636.80189973115921, 122.243852287530899 ],
 									"order" : 0,
-									"source" : [ "obj-2", 0 ]
+									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
-									"midpoints" : [ 16.5, 447.0, 244.5, 447.0 ],
-									"order" : 1,
-									"source" : [ "obj-2", 0 ]
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-16", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
-									"order" : 0,
+									"order" : 1,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -340,8 +616,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
-									"midpoints" : [ 16.5, 249.0, 503.5, 249.0 ],
-									"order" : 1,
+									"midpoints" : [ 16.5, 279.0, 16.5, 279.0 ],
+									"order" : 0,
 									"source" : [ "obj-20", 0 ]
 								}
 
@@ -356,15 +632,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"order" : 1,
-									"source" : [ "obj-34", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"order" : 0,
+									"midpoints" : [ 107.5, 374.358491837978363, 388.886807650327682, 374.358491837978363, 388.886807650327682, 30.933946430683136, 428.764170110225677, 30.933946430683136 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -1408,98 +1676,98 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "bfgenerator_UI.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cv.input.chooser.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers/utils",
-				"patcherrelativepath" : "../../Max 8/Packages/cv.jit/patchers/utils",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/cv.jit/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.HSflow.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.HSflow.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "cv.jit.features.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.features.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "cv.jit.resize.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.resize.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "cv.jit.sum.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.sum.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "data-handler-L.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "data-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "distorted_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "exact_menu.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fft_mean_band_example.maxpat",
-				"bootpath" : "~/Documents/vivo/examples",
+				"bootpath" : "~/src/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/Documents/vivo/lib",
+				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_fbm_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_hetero_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_hybrid_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_multi_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fractal_rigid_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1510,177 +1778,173 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.mo.time.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
+				"name" : "jit.mo.time.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "lo_hi_UI_control.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_crackle_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_id_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoi_smooth_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "noise_voronoise_controls.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/bfg",
+				"bootpath" : "C74:/packages/Vizzie/patchers/bfg",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/Documents/vivo/lib",
+				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "optical_flow_example.maxpat",
-				"bootpath" : "~/Documents/vivo/examples",
+				"bootpath" : "~/src/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pipo.mxe64",
-				"type" : "mx64"
+				"name" : "pipo.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/Documents/vivo/lib",
+				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sharpness_detection_example.maxpat",
-				"bootpath" : "~/Documents/vivo/examples",
+				"bootpath" : "~/src/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "snapshot_UI.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "video-handler.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vivo.process.details+mouvement.maxpat",
-				"bootpath" : "~/Documents/vivo/lib",
+				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-datatexconvert.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vizzie-global.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.bfgener8r.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.texture2matrix.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vz.viewr.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers",
+				"bootpath" : "C74:/packages/Vizzie/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-blackframe.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-context.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-disable.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-object.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vzgl-outputdim.maxpat",
-				"bootpath" : "C74:/packages/vizzie/patchers/utils",
+				"bootpath" : "C74:/packages/Vizzie/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warmness_analysis_hsv_2.maxpat",
-				"bootpath" : "~/Documents/vivo/lib",
+				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warmness_example.maxpat",
-				"bootpath" : "~/Documents/vivo/examples",
+				"bootpath" : "~/src/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "windowresize.js",
-				"bootpath" : "C74:/packages/vizzie/code",
+				"bootpath" : "C74:/packages/Vizzie/code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
