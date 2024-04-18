@@ -93,7 +93,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 7.0, 7.669794917106628, 179.0, 20.0 ],
-									"presentation_linecount" : 4,
 									"text" : "generate artifical texture images"
 								}
 
@@ -106,7 +105,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 432.740351676940918, 80.481116592884064, 209.0, 33.0 ],
-									"presentation_linecount" : 2,
 									"text" : "for each matrix input: \noutputs list of image descriptor values"
 								}
 
@@ -118,7 +116,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 695.80189973115921, 87.0, 359.254720270633698, 20.0 ],
-									"presentation_linecount" : 7,
 									"text" : "at init or clearall message: outputs list of image descriptor names"
 								}
 
@@ -182,7 +179,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-11",
@@ -212,10 +208,10 @@
 													"id" : "obj-8",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 4,
-													"outlettype" : [ "bang", "bang", "", "" ],
-													"patching_rect" : [ 50.0, 109.143028974533081, 100.0, 22.0 ],
-													"text" : "t b b l l"
+													"numoutlets" : 3,
+													"outlettype" : [ "bang", "bang", "" ],
+													"patching_rect" : [ 50.0, 86.143028974533081, 153.0, 22.0 ],
+													"text" : "t b b l"
 												}
 
 											}
@@ -226,7 +222,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 117.0, 159.296875, 43.0, 22.0 ],
+													"patching_rect" : [ 117.0, 159.296875, 86.0, 22.0 ],
 													"text" : "zl lace"
 												}
 
@@ -246,18 +242,6 @@
 													}
 ,
 													"text" : "dict vivodescr"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-2",
-													"maxclass" : "newobj",
-													"numinlets" : 2,
-													"numoutlets" : 2,
-													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 277.0, 109.296875, 43.0, 22.0 ],
-													"text" : "zl reg"
 												}
 
 											}
@@ -323,15 +307,8 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-2", 1 ],
-													"source" : [ "obj-14", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-7", 0 ],
-													"source" : [ "obj-2", 0 ]
+													"source" : [ "obj-14", 0 ]
 												}
 
 											}
@@ -351,13 +328,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-2", 0 ],
-													"source" : [ "obj-8", 1 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-6", 0 ],
 													"source" : [ "obj-8", 0 ]
 												}
@@ -367,6 +337,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-7", 1 ],
 													"source" : [ "obj-8", 2 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"source" : [ "obj-8", 1 ]
 												}
 
 											}
@@ -1736,8 +1713,8 @@
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/src/vivo/lib",
-				"patcherrelativepath" : "../lib",
+				"bootpath" : "~/src/vivo/tests",
+				"patcherrelativepath" : "../tests",
 				"type" : "JSON",
 				"implicit" : 1
 			}
