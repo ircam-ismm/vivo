@@ -192,7 +192,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 40.0, 380.0, 22.0 ],
-									"text" : "foremost imdescr"
+									"text" : "mouse exit 0.111864 20.906874"
 								}
 
 							}
@@ -1264,7 +1264,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-31",
@@ -3138,18 +3137,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-301",
-					"linecount" : 9,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 322.416678684371959, 77.0, 653.0, 127.0 ],
-					"text" : "Korg nanoKontrol startup in CC mode!!!!!:\n\nSet Marker + \nCycle\tCC mode\nREW\tCubase\nFF\tDigital Performer\nSTOP\tAbleton Live\nPLAY\tProtools\nREC\tSonar"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-310",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -3856,7 +3843,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1048.0, 2018.0, 351.0, 22.0 ],
-					"text" : "hastrack 1 descr"
+					"text" : "hastrack 0 descr"
 				}
 
 			}
@@ -6528,7 +6515,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-21",
@@ -7283,9 +7269,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 21.0, 342.700012000000015, 447.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 33.0 ],
-					"text" : "Analysis done: loaded 0.00 MB of image data in 0 patches in 1 buffers."
+					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 20.0 ]
 				}
 
 			}
@@ -10709,6 +10693,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-48",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 582.587111999999934, 70.999999999999972, 80.0, 22.0 ],
+									"text" : "t l l l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-40",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 11.0, 44.000061000000017, 100.0, 22.0 ],
+									"text" : "route columns"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-70",
 									"linecount" : 2,
 									"maxclass" : "comment",
@@ -10761,8 +10769,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 881.5, 180.500061000000017, 129.0, 35.0 ],
-									"text" : "bang"
+									"patching_rect" : [ 881.5, 180.500061000000017, 165.0, 22.0 ],
+									"text" : "1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1."
 								}
 
 							}
@@ -11263,7 +11271,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 589.5, 110.999999999999972, 67.0, 22.0 ],
+									"patching_rect" : [ 643.587111999999934, 107.250004887580843, 67.0, 22.0 ],
 									"text" : "unpack 1 2"
 								}
 
@@ -11375,7 +11383,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 43.0, 33.999999999999972, 86.0, 33.0 ],
+									"patching_rect" : [ 43.0, 7.499999999999972, 86.0, 33.0 ],
 									"text" : "select in descr. values"
 								}
 
@@ -11540,7 +11548,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 11.0, 33.999999999999972, 30.0, 30.0 ]
+									"patching_rect" : [ 11.0, 7.499999999999972, 30.0, 30.0 ]
 								}
 
 							}
@@ -11619,31 +11627,14 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"order" : 1,
+									"destination" : [ "obj-48", 0 ],
 									"source" : [ "obj-171", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"order" : 2,
-									"source" : [ "obj-171", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-45", 1 ],
-									"order" : 0,
-									"source" : [ "obj-171", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
+									"destination" : [ "obj-40", 0 ],
 									"source" : [ "obj-18", 0 ]
 								}
 
@@ -11842,6 +11833,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-48", 0 ],
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-40", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 1 ],
 									"source" : [ "obj-41", 0 ]
 								}
@@ -11872,6 +11877,27 @@
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"source" : [ "obj-45", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-48", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-48", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-45", 1 ],
+									"source" : [ "obj-48", 1 ]
 								}
 
 							}
@@ -15447,7 +15473,7 @@
 					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : -1.0,
+					"cursor_position" : 0.111864406779661,
 					"cursor_shape" : "cross",
 					"cursor_size" : 1,
 					"cursor_sizeunit" : 1,
@@ -15717,6 +15743,18 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 452.240740895271301, 1530.424180180682924, 117.518518209457397, 35.0 ],
 					"text" : "getinfo FileName, getinfo FilePath"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-301",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 322.416678684371959, 77.0, 653.0, 127.0 ],
+					"text" : "Korg nanoKontrol startup in CC mode!!!!!:\n\nSet Marker + \nCycle\tCC mode\nREW\tCubase\nFF\tDigital Performer\nSTOP\tAbleton Live\nPLAY\tProtools\nREC\tSonar"
 				}
 
 			}
@@ -17881,11 +17919,26 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "cv.jit.HSflow.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "cv.jit.features.mxo",
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "cv.jit.sum.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "dominant_colour.maxpat",
+				"bootpath" : "~/src/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fft_mean_bands.maxpat",
 				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
@@ -17938,8 +17991,22 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "optical_flow.maxpat",
+				"bootpath" : "~/src/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
+			}
+, 			{
+				"name" : "sharpness_detection.maxpat",
+				"bootpath" : "~/src/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "thru.maxpat",
@@ -17955,7 +18022,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vivo.process.color+keypoints.maxpat",
+				"name" : "vivo.process.details+mouvement.maxpat",
+				"bootpath" : "~/src/vivo/lib",
+				"patcherrelativepath" : "../lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "warmness_analysis_hsv_2.maxpat",
 				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
