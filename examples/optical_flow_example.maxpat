@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 4,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 995.0, -995.0, 625.0, 920.0 ],
+		"rect" : [ 134.0, 163.0, 625.0, 920.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -48,8 +48,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 283.0, 227.0, 118.0, 38.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 253.0, 186.0, 118.0, 37.0 ],
 					"text" : "by Jean-Marc Pelletier\rjmp@jmpelletier.com\rCopyright ©2003-2020"
 				}
 
@@ -60,7 +59,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 468.75, 441.5, 80.0, 20.0 ],
+					"patching_rect" : [ 439.0, 401.0, 80.0, 20.0 ],
 					"text" : "spat example"
 				}
 
@@ -81,7 +80,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 291.75, 364.0, 175.0, 175.0 ],
+					"patching_rect" : [ 262.0, 323.0, 175.0, 175.0 ],
 					"xplace" : [ 0.5, 0.215714285714286, 0.787142857142857, 0.21, 0.792857142857143 ],
 					"yplace" : [ 0.5, 0.211428571428571, 0.211428571428571, 0.782857142857143, 0.782857142857143 ]
 				}
@@ -93,7 +92,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 275.0, 106.0, 20.0 ],
+					"patching_rect" : [ 24.0, 234.0, 106.0, 20.0 ],
 					"text" : "rgb2luma required"
 				}
 
@@ -104,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 520.0, 52.0, 20.0 ],
+					"patching_rect" : [ 131.0, 479.0, 52.0, 20.0 ],
 					"text" : "average"
 				}
 
@@ -115,7 +114,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 36.0, 520.0, 61.0, 20.0 ],
+					"patching_rect" : [ 6.0, 479.0, 61.0, 20.0 ],
 					"text" : "horizontal"
 				}
 
@@ -126,7 +125,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 101.0, 520.0, 47.0, 20.0 ],
+					"patching_rect" : [ 71.0, 479.0, 47.0, 20.0 ],
 					"text" : "vertical"
 				}
 
@@ -138,7 +137,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 36.0, 334.0, 53.666666666666657, 22.0 ],
+					"patching_rect" : [ 6.0, 293.0, 54.0, 22.0 ],
 					"text" : "pack f f f"
 				}
 
@@ -151,7 +150,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 36.0, 364.0, 177.0, 154.0 ],
+					"patching_rect" : [ 6.0, 323.0, 177.0, 154.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"size" : 3
 				}
@@ -164,7 +163,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 36.0, 300.0, 71.0, 22.0 ],
+					"patching_rect" : [ 6.0, 259.0, 71.0, 22.0 ],
 					"text" : "optical_flow"
 				}
 
@@ -175,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.0, 300.0, 171.0, 20.0 ],
+					"patching_rect" : [ 79.0, 259.0, 171.0, 20.0 ],
 					"style" : "default",
 					"text" : "Single-plane char matrix input."
 				}
@@ -198,7 +197,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 4.0, 4.0 ],
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 36.0, 47.0, 245.0, 218.0 ],
+					"patching_rect" : [ 6.0, 6.0, 245.0, 218.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -242,7 +241,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-90", 0 ],
-					"midpoints" : [ 97.5, 349.0, 301.25, 349.0 ],
+					"midpoints" : [ 67.5, 308.0, 271.5, 308.0 ],
 					"source" : [ "obj-32", 3 ]
 				}
 
@@ -271,17 +270,17 @@
 		"dependency_cache" : [ 			{
 				"name" : "cv.input.chooser.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers/utils",
-				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers/utils",
+				"patcherrelativepath" : "../../cv.jit/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cv.jit.HSflow.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.HSflow.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "cv.jit.resize.mxe64",
-				"type" : "mx64"
+				"name" : "cv.jit.resize.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "interfacecolor.js",
@@ -290,13 +289,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.pass.mxe64",
-				"type" : "mx64"
-			}
-, 			{
 				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/Documents/vivo/patches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "~/Documents/Max 8/Packages/vivo/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
