@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 175.0, 79.0, 1202.0, 724.0 ],
+		"rect" : [ 134.0, 172.0, 1202.0, 724.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -49,15 +49,15 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"major" : 9,
+							"minor" : 0,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 175.0, 105.0, 1202.0, 698.0 ],
+						"rect" : [ 134.0, 198.0, 1202.0, 698.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,6 +88,57 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 693.30189973115921, 180.0, 39.0, 22.0 ],
+									"presentation_linecount" : 2,
+									"text" : "$2 $3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 625.30189973115921, 180.0, 29.5, 22.0 ],
+									"text" : "$1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 693.30189973115921, 214.0, 135.0, 141.0 ],
+									"setminmax" : [ 0.0, 1.0 ],
+									"size" : 2
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 625.30189973115921, 214.0, 66.0, 141.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-21",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -115,7 +166,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 695.80189973115921, 87.0, 359.254720270633698, 20.0 ],
+									"patching_rect" : [ 715.0, 86.981116592884064, 359.254720270633698, 20.0 ],
 									"text" : "at init or clearall message: outputs list of image descriptor names"
 								}
 
@@ -128,7 +179,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 695.80189973115921, 109.0, 376.34907454252243, 62.0 ],
+									"patching_rect" : [ 715.0, 108.981116592884064, 376.34907454252243, 62.0 ],
 									"text" : "Warmness Sharpness AvgDetail LoFreqDetail MidFreqDetail HiFreqDetail HorizFlow VerticFlow AvgFlow HueAvg HueVar SaturationAvg SaturationVar LuminanceAvg LuminanceVar Color Complexity XAvg XVar YAvg YVar"
 								}
 
@@ -143,9 +194,9 @@
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
-											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"major" : 9,
+											"minor" : 0,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -232,11 +283,12 @@
 													"id" : "obj-6",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
-													"numoutlets" : 4,
-													"outlettype" : [ "dictionary", "", "", "" ],
+													"numoutlets" : 5,
+													"outlettype" : [ "dictionary", "", "", "", "" ],
 													"patching_rect" : [ 117.0, 297.989182114601135, 81.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"embed" : 0,
+														"legacy" : 1,
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
 													}
@@ -420,32 +472,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "multislider",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 627.30189973115921, 204.157529711723328, 201.0, 151.0 ],
-									"setminmax" : [ 0.0, 1.0 ],
-									"size" : 3
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 627.30189973115921, 159.132060647010803, 55.0, 22.0 ],
-									"text" : "$1 $2 $3"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -543,6 +569,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"midpoints" : [ 428.764170110225677, 81.0, 428.0, 81.0, 428.0, 121.0, 702.80189973115921, 121.0 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 1 ],
 									"order" : 1,
 									"source" : [ "obj-1", 1 ]
@@ -552,7 +587,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-16", 0 ],
-									"order" : 1,
+									"order" : 2,
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -560,7 +595,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-17", 1 ],
-									"midpoints" : [ 679.764170110225677, 82.863199323415756, 1062.650974273681641, 82.863199323415756 ],
+									"midpoints" : [ 679.764170110225677, 82.863199323415756, 1081.84907454252243, 82.863199323415756 ],
 									"order" : 0,
 									"source" : [ "obj-1", 1 ]
 								}
@@ -568,10 +603,17 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"midpoints" : [ 428.764170110225677, 122.243852287530899, 636.80189973115921, 122.243852287530899 ],
-									"order" : 0,
+									"destination" : [ "obj-8", 0 ],
+									"midpoints" : [ 428.764170110225677, 121.0, 634.0, 121.0, 634.0, 156.0, 633.0, 156.0, 633.0, 157.0, 634.80189973115921, 157.0 ],
+									"order" : 1,
 									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-10", 0 ]
 								}
 
 							}
@@ -601,16 +643,16 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-26", 0 ],
-									"source" : [ "obj-22", 0 ]
+									"destination" : [ "obj-1", 0 ],
+									"midpoints" : [ 107.5, 374.358491837978363, 388.886807650327682, 374.358491837978363, 388.886807650327682, 30.933946430683136, 428.764170110225677, 30.933946430683136 ],
+									"source" : [ "obj-34", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"midpoints" : [ 107.5, 374.358491837978363, 388.886807650327682, 374.358491837978363, 388.886807650327682, 30.933946430683136, 428.764170110225677, 30.933946430683136 ],
-									"source" : [ "obj-34", 0 ]
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -1659,8 +1701,8 @@
 			}
 , 			{
 				"name" : "cv.input.chooser.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers/utils",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/cv.jit/patchers/utils",
+				"bootpath" : "~/Documents/Max 9/Packages/cv.jit/patchers/utils",
+				"patcherrelativepath" : "../../../Max 9/Packages/cv.jit/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1706,15 +1748,15 @@
 			}
 , 			{
 				"name" : "fft_mean_band_example.maxpat",
-				"bootpath" : "~/src/vivo/examples",
+				"bootpath" : "~/Documents/Max Patches/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fft_mean_bands.maxpat",
-				"bootpath" : "~/src/vivo/tests",
-				"patcherrelativepath" : "../tests",
+				"bootpath" : "~/Documents/Max Patches/vivo/lib",
+				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1796,14 +1838,14 @@
 			}
 , 			{
 				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/src/vivo/lib",
+				"bootpath" : "~/Documents/Max Patches/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "optical_flow_example.maxpat",
-				"bootpath" : "~/src/vivo/examples",
+				"bootpath" : "~/Documents/Max Patches/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1814,14 +1856,14 @@
 			}
 , 			{
 				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/src/vivo/lib",
+				"bootpath" : "~/Documents/Max Patches/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sharpness_detection_example.maxpat",
-				"bootpath" : "~/src/vivo/examples",
+				"bootpath" : "~/Documents/Max Patches/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1840,7 +1882,7 @@
 			}
 , 			{
 				"name" : "vivo.process.details+mouvement.maxpat",
-				"bootpath" : "~/src/vivo/lib",
+				"bootpath" : "~/Documents/Max Patches/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1907,14 +1949,14 @@
 			}
 , 			{
 				"name" : "warmness_analysis_hsv_2.maxpat",
-				"bootpath" : "~/src/vivo/lib",
+				"bootpath" : "~/Documents/Max Patches/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "warmness_example.maxpat",
-				"bootpath" : "~/src/vivo/examples",
+				"bootpath" : "~/Documents/Max Patches/vivo/examples",
 				"patcherrelativepath" : "../examples",
 				"type" : "JSON",
 				"implicit" : 1
