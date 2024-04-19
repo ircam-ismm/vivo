@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 9,
-			"minor" : 0,
-			"revision" : 0,
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 360.0, 100.0, 1018.0, 804.0 ],
+		"rect" : [ 34.0, 79.0, 1233.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,6 +61,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 646.0, 219.125, 149.0, 22.0 ],
+					"presentation_linecount" : 2,
 					"text" : "vivo-video-browser-tutorial"
 				}
 
@@ -75,8 +76,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 406.0, 291.0, 22.0 ],
-					"text" : "modules"
+					"patching_rect" : [ 31.0, 485.0, 291.0, 22.0 ],
+					"text" : "Modules"
 				}
 
 			}
@@ -89,6 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.25, 747.5, 1067.0, 33.0 ],
+					"presentation_linecount" : 2,
 					"text" : "Vivo is based on the CoCAVS project supperted by and undertaken as part of the arts, sciences, society residency program at IMéRA institute of advanced studies of the University Aix–Marseille, and supported by Laboratoire Perception, Représentations, Image, Son, Musique (PRISM), CNRS, Aix-Marseille Université. "
 				}
 
@@ -140,8 +142,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 434.0, 10.25, 538.0, 53.0 ],
-					"text" : "Needs mandatory packages Mubu, catart-mubu and cv.jit from the package manager. \nOptional packages: Sensel if you want to use that device.  Otherwise, just ignore the error messages.",
+					"patching_rect" : [ 434.0, 10.25, 551.949150562286377, 53.0 ],
+					"presentation_linecount" : 4,
+					"text" : "Needs mandatory packages Mubu, catart-mubu, and cv.jit from the package manager. \nOptional packages: Sensel if you want to use that device.  Otherwise, just ignore the error messages.",
 					"textcolor" : [ 0.117647058823529, 0.529411764705882, 0.611764705882353, 1.0 ]
 				}
 
@@ -155,7 +158,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 219.125, 366.0, 24.0 ],
+					"patching_rect" : [ 193.0, 219.125, 366.0, 24.0 ],
 					"text" : "load video files into the corpus and browse by image "
 				}
 
@@ -182,8 +185,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 174.0, 332.600001871585846, 374.0, 24.0 ],
-					"text" : "catart with per-grain higher-order ambisonics (HOA) spatialisation"
+					"patching_rect" : [ 193.0, 345.277967751026154, 374.0, 24.0 ],
+					"text" : "control CataRT by real-time video analysis"
 				}
 
 			}
@@ -195,8 +198,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 333.600001871585846, 129.0, 22.0 ],
-					"text" : "catart-mubu-spat-mc"
+					"patching_rect" : [ 31.0, 345.277967751026154, 159.0, 22.0 ],
+					"text" : "catart_parameters_mapping"
 				}
 
 			}
@@ -210,8 +213,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 302.0, 291.0, 22.0 ],
-					"text" : "control CataRT by real-time video analysis"
+					"patching_rect" : [ 31.0, 313.677965879440308, 245.152544736862183, 22.0 ],
+					"text" : "Advanced use cases"
 				}
 
 			}
@@ -225,8 +228,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 153.0, 505.0, 22.0 ],
-					"text" : "load, analyse, and browse image corpora by perceptual visual descriptors"
+					"patching_rect" : [ 31.0, 153.0, 541.593221187591553, 22.0 ],
+					"presentation_linecount" : 4,
+					"text" : "Load, analyse, and browse image corpora by perceptual visual descriptors"
 				}
 
 			}
@@ -276,6 +280,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 333.25, 685.0, 129.0, 35.0 ],
+					"presentation_linecount" : 2,
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -301,7 +306,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 174.0, 439.5, 244.0, 24.0 ],
+					"patching_rect" : [ 193.0, 518.5, 244.0, 24.0 ],
 					"text" : "see the image analysis modules in action"
 				}
 
@@ -314,7 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 439.5, 132.0, 22.0 ],
+					"patching_rect" : [ 31.0, 518.5, 132.0, 22.0 ],
 					"text" : "overview_vivo.process"
 				}
 
@@ -328,7 +333,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 199.0, 184.5, 366.0, 24.0 ],
+					"patching_rect" : [ 193.0, 184.5, 366.0, 24.0 ],
 					"text" : "load image files from lists or directories into the corpus"
 				}
 
@@ -411,7 +416,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 17.0, 138.625, 1178.0, 493.0 ],
 					"rounded" : 16.0,
-					"rows" : 2,
+					"rows" : 3,
 					"saved_attribute_attributes" : 					{
 						"bgstepcolor" : 						{
 							"expression" : ""
@@ -428,7 +433,6 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "live.grid",
-							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3
 						}
