@@ -192,7 +192,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 40.0, 380.0, 22.0 ],
-									"text" : "mouse exit 125.048701 -31.672317"
+									"text" : "foremost imdescr"
 								}
 
 							}
@@ -1273,7 +1273,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 255.0, 89.0, 49.0 ],
+									"patching_rect" : [ 40.0, 255.0, 92.0, 49.0 ],
 									"text" : "target 1, cache_size 30, loadram 30"
 								}
 
@@ -2407,7 +2407,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-95",
-									"items" : "supernova video synthesizer.hap.mov",
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -4848,7 +4848,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -5317,11 +5316,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "jit_matrix", "bang", "" ],
-									"patching_rect" : [ 66.000005373069769, 554.166651090488472, 270.0, 22.0 ],
+									"patching_rect" : [ 66.000005373069769, 554.166651090488472, 333.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 113.666663999999997, 426.65002400000003, 101.0, 62.0 ],
-									"text" : "jit.world cocavs @enable 1 @erase_color 0 0 0 1"
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 113.666663999999997, 426.65002400000003, 101.0, 76.0 ],
+									"text" : "jit.world vivo-video-browser @enable 1 @erase_color 0 0 0 1"
 								}
 
 							}
@@ -6141,8 +6140,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 267.415679812431335, 2124.5, 67.0, 22.0 ],
-					"text" : "s imcorpus"
+					"patching_rect" : [ 267.415679812431335, 2124.5, 73.0, 22.0 ],
+					"text" : "s vimcorpus"
 				}
 
 			}
@@ -6156,8 +6155,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 99.25, 171.999999284744263, 65.0, 22.0 ],
-					"text" : "r imcorpus"
+					"patching_rect" : [ 99.25, 171.999999284744263, 71.0, 22.0 ],
+					"text" : "r vimcorpus"
 				}
 
 			}
@@ -6779,12 +6778,12 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 288.521735191345215, 538.266369462013245, 169.0, 22.0 ],
+									"patching_rect" : [ 288.521735191345215, 538.266369462013245, 171.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"verbose" : 1
 									}
 ,
-									"text" : "mubu.track imcorpus imdescr"
+									"text" : "mubu.track vimcorpus imdescr"
 								}
 
 							}
@@ -7286,7 +7285,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 10.0, 217.014531075954437, 367.333336000000031, 33.0 ],
-					"text" : "Analysis done: loaded 2745.40 MB of image data in 331 patches in 1 buffers."
+					"text" : "Analysis done: loaded 0.00 MB of image data in 0 patches in 1 buffers."
 				}
 
 			}
@@ -8327,7 +8326,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr" ],
+					"args" : [ "vimcorpus", "imdescr" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -8922,6 +8921,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-42",
+													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
@@ -8940,7 +8940,7 @@
 														"verbose" : 1
 													}
 ,
-													"text" : "mubu imcorpus"
+													"text" : "mubu vimcorpus"
 												}
 
 											}
@@ -9030,6 +9030,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-3",
+													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -9039,7 +9040,7 @@
 														"verbose" : 1
 													}
 ,
-													"text" : "mubu.track imcorpus imdescr"
+													"text" : "mubu.track vimcorpus imdescr"
 												}
 
 											}
@@ -9831,6 +9832,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-47",
+													"linecount" : 2,
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
@@ -9849,7 +9851,7 @@
 														"verbose" : 1
 													}
 ,
-													"text" : "mubu imcorpus"
+													"text" : "mubu vimcorpus"
 												}
 
 											}
@@ -10466,8 +10468,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 144.0, 1681.164921075954226, 75.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 99.916663999999997, 605.799987999999985, 72.996299999999962, 20.0 ],
-					"text" : "Index: 125"
+					"presentation_rect" : [ 99.916663999999997, 605.799987999999985, 72.996299999999962, 20.0 ]
 				}
 
 			}
@@ -10515,8 +10516,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 254.837608257929446, 1681.164921075954226, 98.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 630.799987999999985, 162.91296399999996, 20.0 ],
-					"text" : "Start: 4206 ms"
+					"presentation_rect" : [ 10.0, 630.799987999999985, 162.91296399999996, 20.0 ]
 				}
 
 			}
@@ -10527,12 +10527,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 428.5, 1586.164921075954226, 165.0, 22.0 ],
+					"patching_rect" : [ 428.5, 1586.164921075954226, 171.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"verbose" : 1
 					}
 ,
-					"text" : "mubu.track imcorpus imdescr"
+					"text" : "mubu.track vimcorpus imdescr"
 				}
 
 			}
@@ -10567,12 +10567,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 254.837608257929446, 1586.164921075954226, 165.0, 22.0 ],
+					"patching_rect" : [ 254.837608257929446, 1586.164921075954226, 171.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"verbose" : 1
 					}
 ,
-					"text" : "mubu.track imcorpus imdescr"
+					"text" : "mubu.track vimcorpus imdescr"
 				}
 
 			}
@@ -10757,13 +10757,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-65",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 881.5, 180.500061000000017, 129.0, 35.0 ],
-									"text" : "0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0."
+									"text" : "bang"
 								}
 
 							}
@@ -12081,8 +12080,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 100.0, 561.150835987735718, 211.0, 22.0 ],
-					"text" : "camu.imubu.control imcorpus imdescr"
+					"patching_rect" : [ 100.0, 561.150835987735718, 217.0, 22.0 ],
+					"text" : "camu.imubu.control vimcorpus imdescr"
 				}
 
 			}
@@ -12543,7 +12542,7 @@
 										"verbose" : 1
 									}
 ,
-									"text" : "mubu imcorpus"
+									"text" : "mubu vimcorpus"
 								}
 
 							}
@@ -13021,6 +13020,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-41",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -13030,7 +13030,7 @@
 										"verbose" : 1
 									}
 ,
-									"text" : "mubu.track imcorpus imdescr"
+									"text" : "mubu.track vimcorpus imdescr"
 								}
 
 							}
@@ -13129,11 +13129,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 46.0, 254.0, 120.0, 22.0 ],
-									"text" : "s imcorpus-menu-init"
+									"text" : "s vimcorpus-menu-init"
 								}
 
 							}
@@ -13182,11 +13183,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-140",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 220.399993999999992, 254.0, 108.0, 22.0 ],
-									"text" : "s imcorpus-refresh"
+									"text" : "s vimcorpus-refresh"
 								}
 
 							}
@@ -15228,7 +15230,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 2,
 					"presentation_rect" : [ 10.0, 184.014531075954437, 121.0, 35.0 ],
-					"text" : "vivo.analysis imcorpus imdescr",
+					"text" : "vivo.analysis vimcorpus imdescr",
 					"varname" : "corpus-analysis"
 				}
 
@@ -15250,7 +15252,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "type" ],
+					"args" : [ "vimcorpus", "imdescr", "type" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15274,7 +15276,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "opacity" ],
+					"args" : [ "vimcorpus", "imdescr", "opacity" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15313,7 +15315,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "color", "HueAvg" ],
+					"args" : [ "vimcorpus", "imdescr", "color", "HueAvg" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15337,7 +15339,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "size", "SaturationAvg" ],
+					"args" : [ "vimcorpus", "imdescr", "size", "SaturationAvg" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15361,7 +15363,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "y", "Color" ],
+					"args" : [ "vimcorpus", "imdescr", "y", "Color" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15399,7 +15401,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "imcorpus", "imdescr", "x", "LuminanceAvg" ],
+					"args" : [ "vimcorpus", "imdescr", "x", "LuminanceAvg" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -15445,12 +15447,12 @@
 					"cursor_nearest" : 0,
 					"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 0.8 ],
 					"cursor_noringoffset" : 0,
-					"cursor_position" : 125.04870114725432,
+					"cursor_position" : -1.0,
 					"cursor_shape" : "cross",
 					"cursor_size" : 1,
 					"cursor_sizeunit" : 1,
 					"cursor_visible" : 1,
-					"domain_bounds" : [ 70.597784310815271, 131.673907758532067 ],
+					"domain_bounds" : [ 0.0, 1.0 ],
 					"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"domainruler_grid" : 0,
@@ -15470,7 +15472,7 @@
 					"maintrack" : -1,
 					"maxclass" : "imubu",
 					"mousewheelscroll" : 0,
-					"name" : "imcorpus",
+					"name" : "vimcorpus",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"opacity" : 0.0,
@@ -15616,7 +15618,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 168.25, 171.999999284744263, 91.0, 22.0 ],
+					"patching_rect" : [ 168.25, 171.999999284744263, 97.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 128.014531075954437, 103.0, 22.0 ],
 					"saved_object_attributes" : 					{
@@ -15630,7 +15632,7 @@
 						"verbose" : 1
 					}
 ,
-					"text" : "mubu imcorpus"
+					"text" : "mubu vimcorpus"
 				}
 
 			}
@@ -16295,7 +16297,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"midpoints" : [ 381.7876545554073, 820.799987999999985, 398.643827277703622, 820.799987999999985, 398.643827277703622, 550.150835987735718, 173.5, 550.150835987735718 ],
+					"midpoints" : [ 381.7876545554073, 820.799987999999985, 398.643827277703622, 820.799987999999985, 398.643827277703622, 550.150835987735718, 175.5, 550.150835987735718 ],
 					"order" : 1,
 					"source" : [ "obj-167", 1 ]
 				}
@@ -17873,25 +17875,17 @@
 			}
 , 			{
 				"name" : "cputime-message.maxpat",
-				"bootpath" : "~/src/vivo/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/src/cocavs/patches/lib",
+				"patcherrelativepath" : "../../cocavs/patches/lib",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "cv.jit.HSflow.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "cv.jit.features.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "cv.jit.sum.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "fft_mean_bands.maxpat",
+				"name" : "dominant_colour.maxpat",
 				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
@@ -17944,22 +17938,8 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "optical_flow.maxpat",
-				"bootpath" : "~/src/vivo/lib",
-				"patcherrelativepath" : "../lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "pipo.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sharpness_detection.maxpat",
-				"bootpath" : "~/src/vivo/lib",
-				"patcherrelativepath" : "../lib",
-				"type" : "JSON",
-				"implicit" : 1
 			}
 , 			{
 				"name" : "thru.maxpat",
@@ -17975,14 +17955,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "vivo.process.details+mouvement.maxpat",
-				"bootpath" : "~/src/vivo/lib",
-				"patcherrelativepath" : "../lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "warmness_analysis_hsv_2.maxpat",
+				"name" : "vivo.process.color+keypoints.maxpat",
 				"bootpath" : "~/src/vivo/lib",
 				"patcherrelativepath" : "../lib",
 				"type" : "JSON",
