@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"major" : 9,
+			"minor" : 0,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1233.0, 804.0 ],
+		"rect" : [ 360.0, 100.0, 1018.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 646.0, 219.125, 149.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "vivo-video-browser-tutorial"
 				}
 
@@ -90,7 +89,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.25, 747.5, 1067.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Vivo is based on the CoCAVS project supperted by and undertaken as part of the arts, sciences, society residency program at IMéRA institute of advanced studies of the University Aix–Marseille, and supported by Laboratoire Perception, Représentations, Image, Son, Musique (PRISM), CNRS, Aix-Marseille Université. "
 				}
 
@@ -142,9 +140,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 434.0, 10.25, 521.0, 53.0 ],
-					"presentation_linecount" : 4,
-					"text" : "Needs mandatory packages Mubu and catart-mubu from the package manager. \nOptional packages: Sensel if you want to use that device.  Otherwise, just ignore the error messages.",
+					"patching_rect" : [ 434.0, 10.25, 538.0, 53.0 ],
+					"text" : "Needs mandatory packages Mubu, catart-mubu and cv.jit from the package manager. \nOptional packages: Sensel if you want to use that device.  Otherwise, just ignore the error messages.",
 					"textcolor" : [ 0.117647058823529, 0.529411764705882, 0.611764705882353, 1.0 ]
 				}
 
@@ -229,7 +226,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.0, 153.0, 505.0, 22.0 ],
-					"presentation_linecount" : 4,
 					"text" : "load, analyse, and browse image corpora by perceptual visual descriptors"
 				}
 
@@ -280,7 +276,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 333.25, 685.0, 129.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -433,6 +428,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "live.grid",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3
 						}
