@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1233.0, 804.0 ],
+		"rect" : [ 134.0, 172.0, 1233.0, 804.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 58.5, 387.0, 77.0, 22.0 ],
+					"text" : "video_player"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -61,7 +74,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 646.0, 219.125, 149.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "vivo-video-browser-tutorial"
 				}
 
@@ -90,7 +102,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 20.25, 747.5, 1067.0, 33.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Vivo is based on the CoCAVS project supperted by and undertaken as part of the arts, sciences, society residency program at IMéRA institute of advanced studies of the University Aix–Marseille, and supported by Laboratoire Perception, Représentations, Image, Son, Musique (PRISM), CNRS, Aix-Marseille Université. "
 				}
 
@@ -143,7 +154,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 434.0, 10.25, 551.949150562286377, 53.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Needs mandatory packages Mubu, catart-mubu, and cv.jit from the package manager. \nOptional packages: Sensel if you want to use that device.  Otherwise, just ignore the error messages.",
 					"textcolor" : [ 0.117647058823529, 0.529411764705882, 0.611764705882353, 1.0 ]
 				}
@@ -229,7 +239,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.0, 153.0, 541.593221187591553, 22.0 ],
-					"presentation_linecount" : 4,
 					"text" : "Load, analyse, and browse image corpora by perceptual visual descriptors"
 				}
 
@@ -280,7 +289,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 333.25, 685.0, 129.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -433,6 +441,7 @@
 						"valueof" : 						{
 							"parameter_invisible" : 1,
 							"parameter_longname" : "live.grid",
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.grid",
 							"parameter_type" : 3
 						}
@@ -467,6 +476,15 @@
 					"hidden" : 1,
 					"midpoints" : [ 40.5, 214.0, 18.0, 214.0, 18.0, 579.0, 26.5, 579.0 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"hidden" : 1,
+					"midpoints" : [ 68.0, 428.0, 18.0, 428.0, 18.0, 645.0, 26.5, 645.0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -529,9 +547,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"hidden" : 1,
+					"midpoints" : [ 40.5, 376.0, 68.0, 376.0 ],
+					"order" : 0,
+					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"hidden" : 1,
 					"midpoints" : [ 40.5, 665.800000309944153, 26.5, 665.800000309944153 ],
+					"order" : 1,
 					"source" : [ "obj-75", 0 ]
 				}
 
