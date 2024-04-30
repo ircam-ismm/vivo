@@ -16,7 +16,8 @@ They are all bundled in vivo.process.details+mouvement
 ### Examples
 
 #### Browser (off-line)
-An example of how one can use it off-line is the vivo-video-browser, analysing images frame by frame.
+An example of how one can use it off-line is the vivo-video-browser, analysing images frame by frame. 
+[Video Tutorial](https://www.youtube.com/watch?v=R16AeS8phFI)
 
 #### CataRT Mapping (Real-Time)
 Another example provided in the package is the video_player. It allows you to analyze video in real-time and feed any sound algorithm you want (e.g. CataRT)
