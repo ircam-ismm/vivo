@@ -73,3 +73,6 @@ schene/keyframe detection?
 - algorithms
 
 audio onset to video cutup
+
+Standard-deviation/variance of warmness 
+Spatial distribution of warm and cold zones 
