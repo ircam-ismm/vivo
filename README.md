@@ -1,6 +1,12 @@
 # VIVO 
-Vivo is a toolbox that allows you to analyze and control video datas frame by frame.
-The vivo browser is based on Mubu CataRT and Cocavs.
+Vivo is a toolbox that allows you to analyze and control video data frame by frame.
+The vivo browser is based on [CataRT-Mubu](https://forum.ircam.fr/projects/detail/catart-mubu/) and [CoCAVS](https://www.imera.fr/en/researcher/diemo-schwarz/).
+
+### References
+
+[Matéo Fayet, Diemo Schwarz, Vincent Tiffon. VIVO: Video Analysis for Corpus-based Audio--Visual Synthesis. Journées d'Informatique Musicale, May 2024, MARSEILLE (FRANCE), France.](https://hal.science/hal-04576894v1)] (Won [AFIM young researcher award](https://jim2024.sciencesconf.org/resource/page/id/9).)
+
+[Diemo Schwarz. Touch Interaction for Corpus-based Audio-Visual Synthesis. New Interfaces for Musical Expression (NIME), May 2023, Mexico City, Mexico.](https://hal.science/hal-04355949v1)
 
 ## Requirement
 ### Max Packages 
