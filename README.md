@@ -8,11 +8,11 @@ The vivo browser is based on [CataRT-Mubu](https://forum.ircam.fr/projects/detai
 
 [Diemo Schwarz. Touch Interaction for Corpus-based Audio-Visual Synthesis. New Interfaces for Musical Expression (NIME), May 2023, Mexico City, Mexico.](https://hal.science/hal-04355949v1)
 
-## Requirement
+## Requirements
 ### Max Packages 
-* Mubu
+* mubu from the [Max Package Manager](https://cycling74.com/packages/mubu-for-max) or [Ircam Forum](https://forum.ircam.fr/projects/detail/mubu/)
 * (cv.jit) OpticalFlow is based on cv.jithsflow, cv.jitsum is also used in detail analysis
-* Optional : Catart patches for parameters mapping
+* Optional: catart-mubu from the [Package Manager](https://cycling74.com/packages/catart-mubu) or [Ircam Forum](https://forum.ircam.fr/projects/detail/catart-mubu/) for parameter mapping
 
 ## Starting Point
 You can start by playing with the extra/overview_vivo.process and have a look at how the video descriptors work. 
