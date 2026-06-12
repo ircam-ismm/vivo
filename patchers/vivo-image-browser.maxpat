@@ -19,6 +19,20 @@
             {
                 "box": {
                     "fontname": "Arial",
+                    "fontsize": 9.0,
+                    "hidden": 1,
+                    "id": "obj-25",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 508.5, 136.0, 50.5, 19.0 ],
+                    "text": "pak 0 1"
+                }
+            },
+            {
+                "box": {
+                    "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-23",
                     "maxclass": "message",
@@ -108,7 +122,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 703.0, 711.0, 1811.0, 696.0 ],
+                        "rect": [ 703.0, 710.0, 1811.0, 696.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -1585,7 +1599,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 1740.0666645722047, 157.0, 92.60000209446207, 22.0 ],
-                                    "text": "13 15 9 11"
+                                    "text": "13 2 9 11"
                                 }
                             },
                             {
@@ -4343,7 +4357,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 80.0, 161.70001200000002, 112.0, 22.0 ],
-                                    "text": "0.771654 0.110236"
+                                    "text": "0.07874 0.874016"
                                 }
                             },
                             {
@@ -4550,7 +4564,6 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 348.0, 120.0, 113.0, 20.0 ],
-                                    "presentation_linecount": 2,
                                     "text": "remove a from argb"
                                 }
                             },
@@ -6470,7 +6483,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 235.5, 356.26636946201324, 50.0, 22.0 ],
-                                    "text": "0 18"
+                                    "text": "0 34"
                                 }
                             },
                             {
@@ -6992,7 +7005,7 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 10.0, 217.01453107595444, 367.33333600000003, 33.0 ],
-                    "text": "Last Import from Dir System:/Users/schwarz/Pictures/2026/05d Geburtstag Kai 23.-25.5.2026/05-24 Dillingen, Party 2/"
+                    "text": "Last Import from Dir System:/Users/schwarz/Pictures/2026/05e Materials, Plants, Signs/05-08b Silt, Regneville/"
                 }
             },
             {
@@ -7991,7 +8004,7 @@
                     "presentation": 1,
                     "presentation_linecount": 2,
                     "presentation_rect": [ 10.0, 655.799988, 380.0, 33.0 ],
-                    "text": "importing: System:/Users/schwarz/Pictures/2026/05d Geburtstag Kai 23.-25.5.2026/05-24 Dillingen, Party 2/IMG_8746.HEIC"
+                    "text": "importing: System:/Users/schwarz/Pictures/2026/05e Materials, Plants, Signs/05-08b Silt, Regneville/IMG_8324.HEIC"
                 }
             },
             {
@@ -8183,7 +8196,7 @@
                     "numinlets": 3,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 16.0, 606.0, 217.0, 22.0 ],
+                    "patching_rect": [ 16.0, 604.8780484199524, 217.0, 22.0 ],
                     "text": "camu.imubu.control2 imcorpus imdescr"
                 }
             },
@@ -11101,7 +11114,7 @@
                     "cursor_noringoffset": 0,
                     "cursor_numextracursors": 10,
                     "cursor_outputdata": 0,
-                    "cursor_position": [ 86.15144348144531, 252.87771100736128 ],
+                    "cursor_position": [ 137.89098601181422, 0.5000004111135976 ],
                     "cursor_shape": "cross",
                     "cursor_size": 1.0,
                     "cursor_sizeunit": 0,
@@ -11114,7 +11127,7 @@
                     "cursor_symbolwidth": 0.0,
                     "cursor_visible": 1,
                     "dirtypatcher": 1,
-                    "domain_bounds": [ 86.15144348144531, 150.52615356445312 ],
+                    "domain_bounds": [ 120.31953081137746, 186.35238793403784 ],
                     "domainruler_bgcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "domainruler_bgcolordefault": 0,
                     "domainruler_fgcolor": [ 0.0, 0.0, 0.0, 1.0 ],
@@ -11126,10 +11139,10 @@
                     "domainruler_visible": 1,
                     "domainscrollbar_color": [ 1.0, 1.0, 1.0, 1.0 ],
                     "domainscrollbar_colordefault": 0,
-                    "domainscrollbar_size": 10,
-                    "domainscrollbar_visible": 0,
+                    "domainscrollbar_size": 3,
+                    "domainscrollbar_visible": 1,
                     "embed": 0,
-                    "enablemousewheel": 0,
+                    "enablemousewheel": 1,
                     "externalfiles": 1,
                     "filename": "",
                     "foremost": 1,
@@ -11138,7 +11151,7 @@
                     "layout": 0,
                     "maintrack": -1,
                     "maxclass": "imubu",
-                    "mousewheelscroll": 0,
+                    "mousewheelscroll": 1,
                     "mousewheelshiftstep": 40,
                     "mousewheelstep": 4,
                     "name": "imcorpus",
@@ -11942,7 +11955,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-225", 0 ],
+                    "destination": [ "obj-25", 0 ],
                     "hidden": 1,
                     "source": [ "obj-17", 0 ]
                 }
@@ -12223,17 +12236,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-10", 1 ],
-                    "hidden": 1,
-                    "order": 1,
-                    "source": [ "obj-225", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-319", 3 ],
                     "hidden": 1,
-                    "order": 0,
                     "source": [ "obj-225", 0 ]
                 }
             },
@@ -12373,6 +12377,22 @@
                 "patchline": {
                     "destination": [ "obj-251", 0 ],
                     "source": [ "obj-249", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-10", 1 ],
+                    "hidden": 1,
+                    "order": 1,
+                    "source": [ "obj-25", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-225", 0 ],
+                    "hidden": 1,
+                    "order": 0,
+                    "source": [ "obj-25", 0 ]
                 }
             },
             {
@@ -12806,7 +12826,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-225", 1 ],
+                    "destination": [ "obj-25", 1 ],
                     "hidden": 1,
                     "source": [ "obj-43", 0 ]
                 }
@@ -12877,6 +12897,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-225", 3 ],
+                    "hidden": 1,
                     "source": [ "obj-54", 0 ]
                 }
             },
@@ -12890,6 +12911,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-225", 2 ],
+                    "hidden": 1,
                     "source": [ "obj-55", 0 ]
                 }
             },
