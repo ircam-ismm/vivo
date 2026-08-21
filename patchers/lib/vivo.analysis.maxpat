@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1088.0, 57.0, 1489.0, 1269.0 ],
+        "rect": [ 937.0, 53.0, 1556.0, 1027.0 ],
         "openinpresentation": 1,
         "default_fontsize": 9.0,
         "gridsize": [ 10.0, 10.0 ],
@@ -19,6 +19,56 @@
         "bottomtoolbarpinned": 2,
         "toolbars_unpinned_last_save": 15,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-60",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 266.0, 800.6999999880791, 150.0, 27.0 ],
+                    "presentation": 1,
+                    "presentation_linecount": 2,
+                    "presentation_rect": [ 35.0, 130.0, 150.0, 27.0 ],
+                    "text": "recalc order/norm tracks, \nupdate knn"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-106",
+                    "linecount": 2,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 364.80000519345094, 889.3000006675721, 150.0, 27.0 ],
+                    "text": "don't recalc order/norm tracks, should be saved in mubu"
+                }
+            },
+            {
+                "box": {
+                    "fontface": 0,
+                    "fontname": "Arial",
+                    "fontsize": 9.0,
+                    "id": "obj-2",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 356.6000081934509, 868.3000006675721, 45.0, 19.0 ],
+                    "text": "deferlow"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-3",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 356.6000081934509, 836.3000006675721, 24.0, 24.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-121",
@@ -53,7 +103,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 337.46667652914806, 1298.0000032186508, 174.0, 19.0 ],
+                    "patching_rect": [ 337.46667652914806, 1298.0000032186508, 147.0, 19.0 ],
                     "saved_object_attributes": {
                         "savegui": 0,
                         "verbose": 1
@@ -480,6 +530,7 @@
                             {
                                 "box": {
                                     "id": "obj-12",
+                                    "int": 1,
                                     "maxclass": "gswitch2",
                                     "numinlets": 2,
                                     "numoutlets": 2,
@@ -1186,7 +1237,9 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 274.0000051934509, 836.400000667572, 24.0, 24.0 ]
+                    "patching_rect": [ 274.0000051934509, 836.400000667572, 24.0, 24.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 9.0, 130.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -1385,6 +1438,7 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 59.0, 103.0, 694.0, 680.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -2020,7 +2074,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 326.7999991774559, 805.5, 62.0, 19.0 ],
+                    "patching_rect": [ -76.0, 736.0, 62.0, 19.0 ],
                     "text": "print process"
                 }
             },
@@ -2527,6 +2581,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-58", 0 ],
+                    "source": [ "obj-2", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-19", 0 ],
                     "order": 1,
                     "source": [ "obj-21", 0 ]
@@ -2597,6 +2657,12 @@
                 "patchline": {
                     "destination": [ "obj-65", 0 ],
                     "source": [ "obj-25", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-2", 0 ],
+                    "source": [ "obj-3", 0 ]
                 }
             },
             {
@@ -2959,14 +3025,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-21", 0 ],
-                    "order": 1,
+                    "order": 0,
                     "source": [ "obj-90", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-90", 0 ]
                 }
             },
