@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 937.0, 53.0, 1556.0, 1027.0 ],
+        "rect": [ 937.0, 53.0, 1588.0, 1268.0 ],
         "openinpresentation": 1,
         "default_fontsize": 9.0,
         "gridsize": [ 10.0, 10.0 ],
@@ -1147,7 +1147,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "int", "" ],
                     "patching_rect": [ 180.8000051934509, 1183.0000011324883, 462.0, 19.0 ],
-                    "text": "mubu.model #1 imorderdescr normalize @name imordernorm @priority sync @progressoutput input"
+                    "text": "mubu.model #1 imorderdescr normalize @name imordernorm @priority sync"
                 }
             },
             {
@@ -1191,7 +1191,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "int", "" ],
                     "patching_rect": [ 180.8000051934509, 1115.8000069856644, 424.0, 19.0 ],
-                    "text": "mubu.model #1 imdescr order @name imorderdescr @priority sync @progressoutput input"
+                    "text": "mubu.model #1 imdescr order @name imorderdescr @priority sync"
                 }
             },
             {
@@ -1282,7 +1282,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "", "int", "" ],
                     "patching_rect": [ 273.8000051934509, 1028.0000011324883, 442.0, 19.0 ],
-                    "text": "mubu.model #1 #2 normalize @name imdescrnorm @priority sync @progressoutput input"
+                    "text": "mubu.model #1 #2 normalize @name imdescrnorm @priority sync"
                 }
             },
             {
@@ -2588,7 +2588,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-19", 0 ],
-                    "order": 1,
+                    "order": 2,
                     "source": [ "obj-21", 0 ]
                 }
             },
@@ -2607,13 +2607,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-55", 0 ],
-                    "source": [ "obj-21", 1 ]
+                    "order": 0,
+                    "source": [ "obj-21", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-68", 0 ],
-                    "order": 0,
+                    "order": 1,
                     "source": [ "obj-21", 0 ]
                 }
             },
